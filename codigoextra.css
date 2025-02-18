@@ -1,0 +1,128 @@
+/* tablilla de combate */
+.tbs-duelo{display:flex;flex-direction:column;background:var(--fondo-opacity);gap:3px;padding:3px;margin:auto;width:75%;border:var(--border);--color-acento: var(--groups);}
+.tbs-duelo-dados br:first-of-type,.tbs-duelo-datos br,.tbs-duelo-extra br:first-child,.tbs-duelo-pj>br,.tbs-duelo>br{display:none}
+.tbs-duelo-dados i,.tbs-duelo-extra i,.tbs-duelo-nombre i,.tbs-duelo-stats i{color:var(--color-acento)}
+.tbs-duelo-pj{background:var(--fondo-base);display:flex;justify-content:space-between;gap:15px;padding:20px}
+.tbs-duelo-pj>div{flex:1}
+.tbs-duelo-datos{display:flex;flex-direction:column;justify-content:space-around;align-items:flex-start;font-size:13px}
+.tbs-duelo-nombre{display:flex;align-items:center;gap:5px}
+.tbs-duelo-nombre i{font-size:20px}
+.tbs-duelo-extra span,.tbs-duelo-nombre span{font-family:var(--fuente-titulo);text-transform: uppercase; font-weight: 900;}
+.tbs-duelo-stats{display:flex;justify-content:space-between;width:100%}
+.tbs-duelo-stats div{gap:3px;display:flex;align-items:center}
+.tbs-duelo-vida{background:var(--fondo-claro);border:var(--border);width:calc(100% - 6px);height:14px;padding:1px;position:relative}
+.tbs-duelo-vida:before{z-index:1;content:counter(vida-actual)\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'/\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\' counter(vida-total);counter-reset:vida-actual var(--vida-actual) vida-total var(--vida-total);text-align:center;width:35px;font-size:10px;line-height:100%;color:var(--color-texto-claro);position:absolute;top:20%;left:calc(50% - 15px)}
+.tbs-duelo-content{width:calc((100% * var(--vida-actual,10))/ var(--vida-total,10));background:var(--color-acento);height:100%}
+.tbs-duelo-dados{background:var(--fondo-claro);border:var(--border);padding:10px;font-size:12px}
+.tbs-duelo-dados strong,.tbs-duelo-extra strong{text-transform:uppercase;font-weight:900;font-size:11px;color:var(--color-acento)}
+.tbs-duelo-extra{background:var(--fondo-opacity);border-top:var(--border);margin:0 -3px -3px;padding:15px;font-size:12px}
+.tbs-duelo-extra span{font-size:13px}.signature_div {padding-top: 20px;padding-bottom: 20px;}div.postbody div.content.clearfix img {max-height: 800px;max-width: 500px;}
+
+/* post rol otro */
+.tbs-rol {
+    width: 530px;
+    margin: 10px auto;
+    background: var(--background-stema);
+    border: 15px solid var(--background-stema);
+    outline: var(--border-stema);
+    outline-offset: -15px;
+    padding: 30px;
+    text-align: justify;
+}
+.tbs-rol .titulo {
+    gap: 20px;
+    border-bottom: var(--border-stema);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70px;
+    background: var(--bckg);
+    padding: 0 30px;
+    color: var(--accent);
+}
+.tbos-ptitle i {
+    font-size: var(--fntsize-cat);
+}
+.tbos-ptitle b {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.datos1 {
+    margin: 23px 0 0;
+    border-top: 0;
+    height: 35px;
+    background: var(--accent);
+    text-transform: uppercase;
+    font-size: var(--fntsize-mini);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+    border: var(--border-stema);
+}
+.datos1 a:hover {
+    color: #fff;
+}
+.datos1, .datos1 a, .datos1 i {
+    color: #fff;
+}
+
+.tbs-rol .titulo > span > i{color: var(--accent); padding: 0 3px;}
+.tbs-rol .titulo > span{text-transform: uppercase; font-size: var(--fntsize-mini);}
+.tbs-rol .titulo > b{text-transform: uppercase; font-family: var(--fnt-title); font-weight: 900; font-size: var(--fntsize-sub); color: var(--accent);}
+.tbs-rol .titulo > i{position: absolute; left: 0; font-size: calc(var(--fntsize-cat)*1.4); color: var(--accent);}
+.tbs-rol .titulo{margin: 25px 25px 30px; display: flex; flex-direction: column; position: relative; padding-left: 50px; align-items: flex-start; justify-content: center; padding-top: 10px;}
+.tbs-rol .titulo{margin-bottom: 23px;}
+
+.t-admin {font-size: calc(var(--fntsize-nrm)*1.06);
+    background: var(--background-stema);
+    max-width: 700px;
+    margin: 10px auto;
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 10px var(--prin-bckg);
+    border: 15px solid var(--background-stema);
+    outline: var(--border-opacity);
+    outline-offset: -15px;
+    padding: 30px;
+    text-align: justify;}
+
+.t-admin .titulo {gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: var(--border-opacity);
+    height: 80px;
+    background: var(--bckg);
+    padding: 10px 40px;
+    box-sizing: border-box;
+font-family: var(--fnt-title);
+    font-size: var(--fntsize-cat);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--accent-foro);}
+
+.t-admin .subtitulo{text-transform: uppercase;
+    font-size: var(--fntsize-mini);
+    letter-spacing: 1px;}
+
+.t-seccion {text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-left: 5px solid var(--accent-foro);
+    padding-left: 30px;
+    margin: 25px 0;
+    font-style: italic;
+    font-size: var(--fntsize-nrm);
+    background: var(--accent-foro);
+    color: #fff;
+    padding: 2px 5px;
+    position: relative;
+    top: -2px;
+}
+
+.t-num {font-weight: 900;
+    color: var(--accent-foro);
+    padding-left: 20px;
+    padding-right: 20px;}
