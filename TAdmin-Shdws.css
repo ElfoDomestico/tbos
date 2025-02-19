@@ -198,7 +198,7 @@
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: calc(var(--fntsize-mini)*1.03);
+    font-size: calc(var(--fntsize-mini)*.9);
     letter-spacing: 1.5px;
     padding: 2px 5px;
     margin: 0 2px;
