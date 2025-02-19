@@ -71,7 +71,7 @@
     font-weight: 900;
     color: var(--accent-foro);
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 5px;
 }
 .tbos-btab-conteo > span:after {
     content: "\f138";
