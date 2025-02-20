@@ -1,1 +1,72 @@
 /* Profile Test */
+div#tbos-p-inv {
+    overflow: hidden;
+    padding-bottom: 30px!important;
+}
+span#rpg-tickets {
+    margin-top: 10px;
+    display: grid;
+}
+div#tbos-p-inv >* > b,div#tbos-p-inv .codebox,#tbos-p-rpg span#rpg-tickets {display:none;}
+.tbos-p-dato.inventario i {
+    color: var(--accent);
+    font-weight: 900;
+}
+.tbos-p-dato.inventario strong {
+  font-weight: 900;
+  color: #cacaca;
+}   
+.tbos-p-dato.casa span,.tbos-p-dato.raza span {color: var(--accent);}
+.tbos-p-dato.inventario strong:before {
+    content: "\f054";
+    font-family: "Font Awesome 6 Pro";
+    font-size: var(--fntsize-mini);
+    color: var(--accent);
+    padding-right: 5px;
+}
+div#tbos-p-inv > * {
+    flex-direction: column;
+    align-items: unset;
+    height: 230px;
+    overflow: auto;
+    outline: 10px solid var(--prin-bckg);
+    margin: 22px;
+    box-sizing: border-box;
+    background: var(--prin-bckg);
+}
+.tbos-p-dato:after {
+    font-weight: 700;
+    letter-spacing: 1px;
+  color:var(--accent);
+}
+.tbos-p-dato.mensajes:after {
+    content: "mensajes";
+}
+.tbos-p-dato.galeones:after {
+    content: "galeones";
+}
+.tbos-p-dato.edad:after {
+    content: "años";
+}
+  
+.tbos-p-dato.galeones > b, .tbos-p-dato.mensajes > b,.tbos-p-dato.edad > b {
+    display: none;
+}
+.tbos-p-dato.mensajes > i:before {
+    content: "\f52d";
+}
+.tbos-p-dato.edad > i:before {
+    content: "\f183";
+}
+.tbos-p-dato.raza > i:before {
+    content: "\e05d";
+}
+.tbos-p-dato.casa > i:before {
+    content: "\f6e8";
+}
+.tbos-p-dato.cromos > i:before {
+  content: "\f52e";
+  }
+.tbos-p-dato.magia > i:before {
+  content: "\f72a";
+}
