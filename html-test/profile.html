@@ -1,4 +1,108 @@
-<link rel="stylesheet" type="text/css" href="https://elfodomestico.github.io/tbos/profile.css">
+<style>div#tbos-p-inv {
+    overflow: hidden;
+    padding-bottom: 30px!important;
+}
+span#rpg-tickets {
+    margin-top: 10px;
+    display: grid;
+}
+div#tbos-p-inv >* > b,div#tbos-p-inv .codebox,#tbos-p-rpg span#rpg-tickets {display:none;}
+.tbos-p-dato.inventario i {
+    color: var(--accent);
+    font-weight: 900;
+}
+.tbos-p-dato.inventario strong {
+  font-weight: 900;
+  color: #cacaca;
+}   
+.tbos-p-dato.casa span,.tbos-p-dato.raza span {color: var(--accent);}
+.tbos-p-dato.inventario strong:before {
+    content: "\f054";
+    font-family: "Font Awesome 6 Pro";
+    font-size: var(--fntsize-mini);
+    color: var(--accent);
+    padding-right: 5px;
+}
+div#tbos-p-inv > * {
+    flex-direction: column;
+    align-items: unset;
+    height: 230px;
+    overflow: auto;
+    outline: 10px solid var(--prin-bckg);
+    margin: 22px;
+    box-sizing: border-box;
+    background: var(--prin-bckg);
+}
+.tbos-p-dato:after {
+    font-weight: 700;
+    letter-spacing: 1px;
+  color:var(--accent);
+}
+.tbos-p-dato.mensajes:after {
+    content: "mensajes";
+}
+.tbos-p-dato.galeones:after {
+    content: "galeones";
+}
+.tbos-p-dato.edad:after {
+    content: "años";
+}
+  
+.tbos-p-dato.galeones > b, .tbos-p-dato.mensajes > b,.tbos-p-dato.edad > b {
+    display: none;
+}
+.tbos-p-dato.mensajes > i:before {
+    content: "\f52d";
+}
+.tbos-p-dato.edad > i:before {
+    content: "\f183";
+}
+.tbos-p-dato.raza > i:before {
+    content: "\e05d";
+}
+.tbos-p-dato.casa > i:before {
+    content: "\f6e8";
+}
+.tbos-p-dato.cromos > i:before {
+  content: "\f52e";
+  }
+.tbos-p-dato.magia > i:before {
+  content: "\f72a";
+}
+.tbos-p-dato.condición > i:before {
+  content: "\f54c";
+}
+.tbos-p-dato.certificaciones {
+    display: block;
+    padding: 20px;
+    background: transparent;
+    color: var(--color) !important;
+}
+.tbos-p-dato.certificaciones > b::before {
+    content: 'Certificaciones';
+    font-size: var(--fntsize-cat);
+}
+.tbos-p-dato.certificaciones > b {
+    color: var(--color-two);
+    font-size: 0;
+    font-family: var(--fnt-title);
+}
+.tbos-p-dato.certificaciones ul.profile_field_list {
+    color: var(--color-two);
+}
+.tbos-p-dato.certificaciones ul.profile_field_list > li {
+    padding: 10px;
+    border: 1px solid var(--accent);
+    display: inline-flex;
+    align-content: flex-start;
+    margin: 5px;
+    vertical-align: middle;
+}
+.tbos-p-dato.certificaciones ul.profile_field_list > li::before {
+    content: '\f5f3';
+    font-family:'Font Awesome 6 Pro';
+    padding-right: 5px;
+}</style>
     
     <div class="tbos-perfil">
           <div class="tbos-p-nombre">
@@ -21,6 +125,7 @@
                 <button onclick="showhye()" id="tbos-bhye">Experiencia y Galeones</button>
                 <button onclick="showInv()" id="tbos-binv">Medallas</button>
                 <button onclick="showRPG()" id="tbos-brpg">RPG</button>
+                <button onclick="showCert()" id="tbos-cert">Certificaciones</button>
               </div>
               <div id="tbos-p-indice" class="tbos-pactive">
                 <div class="tbos-p-index-c">
@@ -54,6 +159,9 @@
             </div>
             <!-- END switch_awards -->
               </div>
+              <div id="tbos-p-cert">
+                
+                </div>
             </div>
           </div>
           <div class="tbos-p-estadisticas">
@@ -76,10 +184,12 @@
     var rpg = document.getElementById("tbos-p-rpg");
     var inv = document.getElementById("tbos-p-inv");
     var hye = document.getElementById("tbos-p-hye");
+    var cert = document.getElementById("tbos-p-cert");
     var bind = document.getElementById("tbos-bin");
     var brpg = document.getElementById("tbos-brpg");
     var binv = document.getElementById("tbos-binv");
     var bhye = document.getElementById("tbos-bhye");
+    var bcert = document.getElementById("tbos-cert");
     
     function show(element,boton){
        if(element.className === 'tbos-pactive'){
@@ -93,6 +203,9 @@
          element.classList.add("tbos-pactive");
          boton.classList.add("tbos-bactivo");
        }
+    }
+    function showCert(){
+       show(cert, bcert);
     }
     function showRPG(){
        show(rpg, brpg);
@@ -137,7 +250,10 @@
       $('.tbos-p-dato.imagen_grande img').each(function(){
         $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').attr('style','background:url('+$(this)[0].src+');');
     });
-      $('..tbos-p-dato.experiencia .field_uneditable').each(function(){
+    $('.tbos-p-dato.certificaciones').each(function() {
+    $('#tbos-p-cert').prepend($(this)); 
+});
+      $('.tbos-p-dato.experiencia .field_uneditable').each(function(){
         $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').children('#tbos-p-hye').find('.tbos-p-i-experiencia > div > span').prepend(this);
     });
       $('#tbos-p-inv .inventario').append($('#rpg-tickets'));
