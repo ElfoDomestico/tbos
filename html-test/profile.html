@@ -72,7 +72,7 @@ div#tbos-p-inv > * {
 .tbos-p-dato.condición > i:before {
   content: "\f54c";
 }
-.tbos-p-dato.certificaciones {
+div#tbos-p-cert .tbos-p-dato {
     display: block;
     padding: 20px;
     background: transparent;
@@ -82,15 +82,24 @@ div#tbos-p-inv > * {
     content: 'Certificaciones';
     font-size: var(--fntsize-cat);
 }
-.tbos-p-dato.certificaciones > b {
+.tbos-p-dato.idiomas > b::before {
+    content: 'Idiomas';
+    font-size: var(--fntsize-cat);
+}
+.tbos-p-dato.certificaciones > b, .tbos-p-dato.idiomas > b {
     color: var(--color-two);
     font-size: 0;
     font-family: var(--fnt-title);
 }
-.tbos-p-dato.certificaciones ul.profile_field_list {
+.tbos-p-dato.idiomas > b {
+    color: var(--color-two);
+    font-size: 0;
+    font-family: var(--fnt-title);
+}
+.tbos-p-dato.certificaciones ul.profile_field_list, .tbos-p-dato.idiomas ul.profile_field_list {
     color: var(--color-two);
 }
-.tbos-p-dato.certificaciones ul.profile_field_list > li {
+.tbos-p-dato.certificaciones ul.profile_field_list > li, .tbos-p-dato.idiomas ul.profile_field_list > li {
     padding: 10px;
     border: 1px solid var(--accent);
     display: inline-flex;
@@ -102,7 +111,14 @@ div#tbos-p-inv > * {
     content: '\f5f3';
     font-family:'Font Awesome 6 Pro';
     padding-right: 5px;
-}</style>
+}
+.tbos-p-dato.idiomas ul.profile_field_list > li::before {
+    content: '\f1ab';
+    font-family:'Font Awesome 6 Pro';
+    padding-right: 5px;
+}
+
+</style>
     
     <div class="tbos-perfil">
           <div class="tbos-p-nombre">
@@ -121,11 +137,11 @@ div#tbos-p-inv > * {
             </div>
             <div class="tbos-p-cajon">
               <div id="tbos-p-botones">
-                <button onclick="showIndex()" class="tbos-bactivo" id="tbos-bin">Índice</button>
-                <button onclick="showhye()" id="tbos-bhye">Experiencia y Galeones</button>
-                <button onclick="showInv()" id="tbos-binv">Medallas</button>
-                <button onclick="showRPG()" id="tbos-brpg">RPG</button>
-                <button onclick="showCert()" id="tbos-cert">Certificaciones</button>
+                <button onclick="showIndex()" class="tbos-bactivo" id="tbos-bin"><i class="fa-regular fa-house"></i></button>
+                <button onclick="showhye()" id="tbos-bhye"><i class="fa-regular fa-coin-vertical"></i></button>
+                <button onclick="showInv()" id="tbos-binv"><i class="fa-regular fa-medal"></i></button>
+                <button onclick="showRPG()" id="tbos-brpg"><i class="fa-regular fa-dice-d20"></i></button>
+                <button onclick="showCert()" id="tbos-cert"><i class="fa-regular fa-file-certificate"></i></button>
               </div>
               <div id="tbos-p-indice" class="tbos-pactive">
                 <div class="tbos-p-index-c">
@@ -160,8 +176,9 @@ div#tbos-p-inv > * {
             <!-- END switch_awards -->
               </div>
               <div id="tbos-p-cert">
-                
-                </div>
+                <div class="cert-list"></div>
+                <div class="lang-list"></div>
+              </div>
             </div>
           </div>
           <div class="tbos-p-estadisticas">
@@ -251,7 +268,10 @@ div#tbos-p-inv > * {
         $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').attr('style','background:url('+$(this)[0].src+');');
     });
     $('.tbos-p-dato.certificaciones').each(function() {
-    $('#tbos-p-cert').prepend($(this)); 
+    $('.cert-list').prepend($(this)); 
+});
+$('.tbos-p-dato.idiomas').each(function() {
+    $('.lang-list').prepend($(this)); 
 });
       $('.tbos-p-dato.experiencia .field_uneditable').each(function(){
         $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').children('#tbos-p-hye').find('.tbos-p-i-experiencia > div > span').prepend(this);
