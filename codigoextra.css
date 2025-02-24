@@ -106,3 +106,14 @@ font-family: var(--fnt-title);
     color: var(--accent-foro);
     padding-left: 20px;
     padding-right: 20px;}
+
+
+    /* Tabillas Noticias */
+
+    .tbos-important {
+        border-radius: 0;
+        border-width: 5px;
+        border-style: double;
+        padding: 10px;
+        background: #ded5b2;
+    }
