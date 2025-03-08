@@ -117,3 +117,25 @@ font-family: var(--fnt-title);
         padding: 10px;
         background: #ded5b2;
     }
+
+    /* TBOS Encuesta */
+
+    .panel.tbos-poll {
+        background: var(--bckg-nav);
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px 30px;
+    }
+    
+    .tbos-poll fieldset.polls dl {
+        border-top: none;
+        border-bottom: var(--border-stema);
+        padding: 5px;
+    }
+    
+    .panel.tbos-poll > .inner >.content > h2.left-box.h3 {
+        font-family: var(--fnt-title) !important;
+        margin-top: 10px;
+        border: 2px solid var(--background-schema) !important;
+        font-weight: normal !important;
+    }
