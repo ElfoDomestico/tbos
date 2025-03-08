@@ -122,7 +122,6 @@ font-family: var(--fnt-title);
 
     .panel.tbos-poll {
         background: var(--bckg-nav);
-        width: 70%;
         margin: 0 auto;
         padding: 10px 30px;
     }
@@ -134,8 +133,11 @@ font-family: var(--fnt-title);
     }
     
     .panel.tbos-poll > .inner >.content > h2.left-box.h3 {
-        font-family: var(--fnt-title) !important;
+        font-family: var(--fnt-nrm);
         margin-top: 10px;
-        border: 2px solid var(--background-schema) !important;
+        border-bottom: 2px solid var(--accent);
         font-weight: normal !important;
+        text-transform: none;
+        font-size: var(--fntsize-sub);
+        width: 80% !important;
     }
