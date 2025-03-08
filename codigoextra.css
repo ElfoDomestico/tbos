@@ -132,7 +132,7 @@ font-family: var(--fnt-title);
         padding: 5px;
     }
     
-    .panel.tbos-poll > .inner >.content > h2.left-box.h3 {
+    .panel.tbos-poll > .inner >.content > h2.left-box.h3, .panel.tbos-poll > .inner >.content > h2.left-box {
         font-family: var(--fnt-nrm);
         margin-top: 10px;
         border-bottom: 2px solid var(--accent);
