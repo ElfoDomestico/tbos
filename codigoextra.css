@@ -141,3 +141,7 @@ font-family: var(--fnt-title);
         font-size: var(--fntsize-sub);
         width: 80% !important;
     }
+
+    .poster-list .poster:before {
+        border: none;
+    }
