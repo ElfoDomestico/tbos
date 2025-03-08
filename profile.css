@@ -70,3 +70,10 @@ div#tbos-p-inv > * {
 .tbos-p-dato.magia > i:before {
   content: "\f72a";
 }
+div#tbos-p-cert {
+
+    max-height: 250px;
+    margin-top: -100px;
+    top: 99px;
+    overflow: auto;
+}
