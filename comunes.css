@@ -283,8 +283,8 @@ blockquote:before {
 ::-webkit-scrollbar {
     background: var(--bckg);
     border-left: var(--border-opacity);
-    height: 5px!important;
-    width: 10px!important;
+    height: 10px!important;
+    width: 20px!important;
 }
 
 ::-webkit-scrollbar-thumb {
