@@ -152,4 +152,6 @@ font-family: var(--fnt-title);
         left: 40px;
         top: 40px;
         font-size: 230%;
+        color: var(--accent);
+        font-weight: 900;
     }
