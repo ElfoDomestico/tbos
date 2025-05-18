@@ -166,6 +166,10 @@ font-family: var(--fnt-title);
     }
     .pj-spells .hechizos strong {
         color: var(--color-two);
+        display: block;
+        padding: 5px;
+        font-size: larger;
+        background: var(--background-stema);
     }
     .tbos-p-dato.hechizos {
         background: transparent;
