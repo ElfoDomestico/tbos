@@ -167,7 +167,7 @@ font-family: var(--fnt-title);
     }
     .tbos-p-dato.hechizos {
         background: transparent;
-        columns: 2;
+        columns: 3;
         display: block;
     }
     .tbos-p-dato.hechizos b {
