@@ -155,3 +155,7 @@ font-family: var(--fnt-title);
         color: var(--accent);
         font-weight: 900;
     }
+
+    .pj-spells {
+        padding: 10px;
+    }
