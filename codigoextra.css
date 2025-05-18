@@ -159,3 +159,21 @@ font-family: var(--fnt-title);
     .pj-spells {
         padding: 10px;
     }
+
+    a.h-spells {
+        color: var(--color-two);
+        font-family: var(--fnt-title);
+        font-size: larger;
+    }
+   
+    .tbos-p-dato.hechizos {
+        background: transparent;
+        columns: 2;
+        display: block;
+    }
+    
+    .tbos-p-dato.hechizos b {
+        color: var(--color-two);
+        font-family: var(--fnt-title);
+        font-size: var(--fntsize-cat);
+    }
