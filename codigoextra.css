@@ -177,9 +177,7 @@ font-family: var(--fnt-title);
         display: block;
     }
     .tbos-p-dato.hechizos b {
-        color: var(--color-two);
-        font-family: var(--fnt-title);
-        font-size: var(--fntsize-cat);
+        display: none;
     }.pj-spells .hechizos i {
         color: var(--color-two);
         border-bottom: 2px solid var(--accent);
