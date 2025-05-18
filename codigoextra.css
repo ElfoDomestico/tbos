@@ -161,6 +161,8 @@ font-family: var(--fnt-title);
     }
     .pj-spells h2.post-content {
         color: var(--color-two);
+    background: var(--accent);
+    text-align: center;
     }
     .pj-spells .hechizos strong {
         color: var(--color-two);
@@ -174,4 +176,14 @@ font-family: var(--fnt-title);
         color: var(--color-two);
         font-family: var(--fnt-title);
         font-size: var(--fntsize-cat);
+    }.pj-spells .hechizos i {
+        color: var(--color-two);
+        border-bottom: 2px solid var(--accent);
+        padding: 2px;
+        margin: 0px 5px 5px;
+        display: inline-block;
+    }
+    
+    .pj-spells .hechizos br {
+        display: none;
     }
