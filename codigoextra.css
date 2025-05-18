@@ -125,13 +125,11 @@ font-family: var(--fnt-title);
         margin: 0 auto;
         padding: 10px 30px;
     }
-    
     .tbos-poll fieldset.polls dl {
         border-top: none;
         border-bottom: var(--border-stema);
         padding: 5px;
-    }
-    
+    }   
     .panel.tbos-poll > .inner >.content > h2.left-box.h3, .panel.tbos-poll > .inner >.content > h2.left-box {
         font-family: var(--fnt-nrm);
         margin-top: 10px;
@@ -141,12 +139,9 @@ font-family: var(--fnt-title);
         font-size: var(--fntsize-sub);
         width: 80% !important;
     }
-
     .poster-list .poster:before {
         border: none;
     }
-
-
     .forumtitle i {
         position: absolute;
         left: 40px;
@@ -155,24 +150,26 @@ font-family: var(--fnt-title);
         color: var(--accent);
         font-weight: 900;
     }
-
     div#tbos-p-spells {
         padding: 10px;
     }
     .pj-spells {
         padding: 5px;
     }
-
     a.h-spells {
         color: var(--color-two);
     }
-   
+    .pj-spells h2.post-content {
+        color: var(--color-two);
+    }
+    .pj-spells .hechizos strong {
+        color: var(--color-two);
+    }
     .tbos-p-dato.hechizos {
         background: transparent;
         columns: 2;
         display: block;
     }
-    
     .tbos-p-dato.hechizos b {
         color: var(--color-two);
         font-family: var(--fnt-title);
