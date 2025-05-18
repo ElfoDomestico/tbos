@@ -156,14 +156,15 @@ font-family: var(--fnt-title);
         font-weight: 900;
     }
 
-    .pj-spells {
+    div#tbos-p-spells {
         padding: 10px;
+    }
+    .pj-spells {
+        padding: 5px;
     }
 
     a.h-spells {
         color: var(--color-two);
-        font-family: var(--fnt-title);
-        font-size: larger;
     }
    
     .tbos-p-dato.hechizos {
