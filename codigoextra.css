@@ -240,9 +240,6 @@ a.h-spells {
     display: block;
 }
 
-.tbos-p-dato.hechizos b {
-    display: none;
-}
 
 .pj-spells .hechizos i {
     color: var(--color-two);
