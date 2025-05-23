@@ -212,6 +212,7 @@ div#tbos-p-spells, div#tbos-p-skills{
 
 .pj-spells´, .pj-skills {
     padding: 5px;
+    color: var(--color-two);
 }
 
 a.h-spells {
@@ -259,4 +260,13 @@ a.h-spells {
 
 .pj-spells .hechizos br {
     display: none;
+}
+.tbos-p-dato.habilidades {
+    font-size: 0;
+}
+.tbos-p-dato.habilidades span {
+    color: var(--color-two);
+    padding: 5px;
+    line-height: 2em;
+    font-size: 11px;
 }
