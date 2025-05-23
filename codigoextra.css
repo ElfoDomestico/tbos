@@ -9,6 +9,7 @@
     padding: 30px;
     text-align: justify;
 }
+
 .tbs-rol .titulo {
     gap: 20px;
     border-bottom: var(--border-stema);
@@ -20,14 +21,17 @@
     padding: 0 30px;
     color: var(--accent);
 }
+
 .tbos-ptitle i {
     font-size: var(--fntsize-cat);
 }
+
 .tbos-ptitle b {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: .5px;
 }
+
 .datos1 {
     margin: 23px 0 0;
     border-top: 0;
@@ -42,21 +46,59 @@
     gap: 10px;
     border: var(--border-stema);
 }
+
 .datos1 a:hover {
     color: #fff;
 }
-.datos1, .datos1 a, .datos1 i {
+
+.datos1,
+.datos1 a,
+.datos1 i {
     color: #fff;
 }
 
-.tbs-rol .titulo > span > i{color: var(--accent); padding: 0 3px;}
-.tbs-rol .titulo > span{text-transform: uppercase; font-size: var(--fntsize-mini);}
-.tbs-rol .titulo > b{text-transform: uppercase; font-family: var(--fnt-title); font-weight: 900; font-size: var(--fntsize-sub); color: var(--accent);}
-.tbs-rol .titulo > i{position: absolute; left: 0; font-size: calc(var(--fntsize-cat)*1.4); color: var(--accent);}
-.tbs-rol .titulo{margin: 25px 25px 30px; display: flex; flex-direction: column; position: relative; padding-left: 50px; align-items: flex-start; justify-content: center; padding-top: 10px;}
-.tbs-rol .titulo{margin-bottom: 23px;}
+.tbs-rol .titulo>span>i {
+    color: var(--accent);
+    padding: 0 3px;
+}
 
-.t-admin {font-size: calc(var(--fntsize-nrm)*1.06);
+.tbs-rol .titulo>span {
+    text-transform: uppercase;
+    font-size: var(--fntsize-mini);
+}
+
+.tbs-rol .titulo>b {
+    text-transform: uppercase;
+    font-family: var(--fnt-title);
+    font-weight: 900;
+    font-size: var(--fntsize-sub);
+    color: var(--accent);
+}
+
+.tbs-rol .titulo>i {
+    position: absolute;
+    left: 0;
+    font-size: calc(var(--fntsize-cat)*1.4);
+    color: var(--accent);
+}
+
+.tbs-rol .titulo {
+    margin: 25px 25px 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.tbs-rol .titulo {
+    margin-bottom: 23px;
+}
+
+.t-admin {
+    font-size: calc(var(--fntsize-nrm)*1.06);
     background: var(--background-stema);
     max-width: 700px;
     margin: 10px auto;
@@ -66,9 +108,11 @@
     outline: var(--border-opacity);
     outline-offset: -15px;
     padding: 30px;
-    text-align: justify;}
+    text-align: justify;
+}
 
-.t-admin .titulo {gap: 20px;
+.t-admin .titulo {
+    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -77,17 +121,21 @@
     background: var(--bckg);
     padding: 10px 40px;
     box-sizing: border-box;
-font-family: var(--fnt-title);
+    font-family: var(--fnt-title);
     font-size: var(--fntsize-cat);
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--accent-foro);}
+    color: var(--accent-foro);
+}
 
-.t-admin .subtitulo{text-transform: uppercase;
+.t-admin .subtitulo {
+    text-transform: uppercase;
     font-size: var(--fntsize-mini);
-    letter-spacing: 1px;}
+    letter-spacing: 1px;
+}
 
-.t-seccion {text-transform: uppercase;
+.t-seccion {
+    text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
     border-left: 5px solid var(--accent-foro);
@@ -102,90 +150,113 @@ font-family: var(--fnt-title);
     top: -2px;
 }
 
-.t-num {font-weight: 900;
+.t-num {
+    font-weight: 900;
     color: var(--accent-foro);
     padding-left: 20px;
-    padding-right: 20px;}
+    padding-right: 20px;
+}
 
 
-    /* Tabillas Noticias */
+/* Tabillas Noticias */
 
-    .tbos-important {
-        border-radius: 0;
-        border-width: 5px;
-        border-style: double;
-        padding: 10px;
-        background: #ded5b2;
-    }
+.tbos-important {
+    border-radius: 0;
+    border-width: 5px;
+    border-style: double;
+    padding: 10px;
+    background: #ded5b2;
+}
 
-    /* TBOS Encuesta */
+/* TBOS Encuesta */
 
-    .panel.tbos-poll {
-        background: var(--bckg-nav);
-        margin: 0 auto;
-        padding: 10px 30px;
-    }
-    .tbos-poll fieldset.polls dl {
-        border-top: none;
-        border-bottom: var(--border-stema);
-        padding: 5px;
-    }   
-    .panel.tbos-poll > .inner >.content > h2.left-box.h3, .panel.tbos-poll > .inner >.content > h2.left-box {
-        font-family: var(--fnt-nrm);
-        margin-top: 10px;
-        border-bottom: 2px solid var(--accent);
-        font-weight: normal !important;
-        text-transform: none;
-        font-size: var(--fntsize-sub);
-        width: 80% !important;
-    }
-    .poster-list .poster:before {
-        border: none;
-    }
-    .forumtitle i {
-        position: absolute;
-        left: 40px;
-        top: 40px;
-        font-size: 230%;
-        color: var(--accent);
-        font-weight: 900;
-    }
-    div#tbos-p-spells {
-        padding: 10px;
-    }
-    .pj-spells {
-        padding: 5px;
-    }
-    a.h-spells {
-        color: var(--color-two);
-    }
-    .pj-spells h2.post-content {
-        color: var(--color-two);
+.panel.tbos-poll {
+    background: var(--bckg-nav);
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+.tbos-poll fieldset.polls dl {
+    border-top: none;
+    border-bottom: var(--border-stema);
+    padding: 5px;
+}
+
+.panel.tbos-poll>.inner>.content>h2.left-box.h3,
+.panel.tbos-poll>.inner>.content>h2.left-box {
+    font-family: var(--fnt-nrm);
+    margin-top: 10px;
+    border-bottom: 2px solid var(--accent);
+    font-weight: normal !important;
+    text-transform: none;
+    font-size: var(--fntsize-sub);
+    width: 80% !important;
+}
+
+.poster-list .poster:before {
+    border: none;
+}
+
+.forumtitle i {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    font-size: 230%;
+    color: var(--accent);
+    font-weight: 900;
+}
+
+div#tbos-p-spells {
+    padding: 10px;
+}
+
+.pj-spells {
+    padding: 5px;
+}
+
+a.h-spells {
+    color: var(--color-two);
+}
+
+.pj-spells h2.post-content {
+    color: var(--color-two);
     background: var(--accent);
     text-align: center;
-    }
-    .pj-spells .hechizos strong {
-        color: var(--color-two);
-        display: block;
-        padding: 5px;
-        font-size: larger;
-        background: var(--background-stema);
-    }
-    .tbos-p-dato.hechizos {
-        background: transparent;
-        columns: 3;
-        display: block;
-    }
-    .tbos-p-dato.hechizos b {
-        display: none;
-    }.pj-spells .hechizos i {
-        color: var(--color-two);
-        border-bottom: 2px solid var(--accent);
-        padding: 2px;
-        margin: 0px 5px 5px;
-        display: inline-block;
-    }
-    
-    .pj-spells .hechizos br {
-        display: none;
-    }
+}
+
+.pj-spells .hechizos strong {
+    color: var(--color-two);
+    display: block;
+    padding: 5px;
+    font-size: larger;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 5px;
+}
+
+.tbos-p-dato.hechizos {
+    background: transparent;
+    columns: 3;
+    display: block;
+}
+
+.tbos-p-dato.hechizos b {
+    display: none;
+}
+
+.pj-spells .hechizos i {
+    color: var(--color-two);
+    padding: 2px;
+    margin: 0px 5px 5px;
+    display: inline-block;
+}
+
+.pj-spells .hechizos i::before {
+    content: '\e5d6';
+    font-family: 'FontAwesome';
+    margin-right: 5px;
+    color: var(--accent);
+}
+
+.pj-spells .hechizos br {
+    display: none;
+}
