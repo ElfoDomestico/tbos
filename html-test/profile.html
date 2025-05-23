@@ -1,29 +1,44 @@
-<style>div#tbos-p-inv {
+<style>
+  div#tbos-p-inv {
     overflow: hidden;
-    padding-bottom: 30px!important;
-}
-span#rpg-tickets {
+    padding-bottom: 30px !important;
+  }
+
+  span#rpg-tickets {
     margin-top: 10px;
     display: grid;
-}
-div#tbos-p-inv >* > b,div#tbos-p-inv .codebox,#tbos-p-rpg span#rpg-tickets {display:none;}
-.tbos-p-dato.inventario i {
+  }
+
+  div#tbos-p-inv>*>b,
+  div#tbos-p-inv .codebox,
+  #tbos-p-rpg span#rpg-tickets {
+    display: none;
+  }
+
+  .tbos-p-dato.inventario i {
     color: var(--accent);
     font-weight: 900;
-}
-.tbos-p-dato.inventario strong {
-  font-weight: 900;
-  color: #cacaca;
-}   
-.tbos-p-dato.casa span,.tbos-p-dato.raza span {color: var(--accent);}
-.tbos-p-dato.inventario strong:before {
+  }
+
+  .tbos-p-dato.inventario strong {
+    font-weight: 900;
+    color: #cacaca;
+  }
+
+  .tbos-p-dato.casa span,
+  .tbos-p-dato.raza span {
+    color: var(--accent);
+  }
+
+  .tbos-p-dato.inventario strong:before {
     content: "\f054";
     font-family: "Font Awesome 6 Pro";
     font-size: var(--fntsize-mini);
     color: var(--accent);
     padding-right: 5px;
-}
-div#tbos-p-inv > * {
+  }
+
+  div#tbos-p-inv>* {
     flex-direction: column;
     align-items: unset;
     height: 230px;
@@ -32,333 +47,391 @@ div#tbos-p-inv > * {
     margin: 22px;
     box-sizing: border-box;
     background: var(--prin-bckg);
-}
-.tbos-p-dato:after {
+  }
+
+  .tbos-p-dato:after {
     font-weight: 700;
     letter-spacing: 1px;
-  color:var(--accent);
-}
-.tbos-p-dato.mensajes:after {
-    content: "mensajes";
-}
-.tbos-p-dato.galeones:after {
-    content: "galeones";
-}
-.tbos-p-dato.edad:after {
-    content: "años";
-}
-  
-.tbos-p-dato.galeones > b, .tbos-p-dato.mensajes > b,.tbos-p-dato.edad > b {
-    display: none;
-}
-.tbos-p-dato.mensajes > i:before {
-    content: "\f52d";
-}
-.tbos-p-dato.edad > i:before {
-    content: "\f183";
-}
-.tbos-p-dato.raza > i:before {
-    content: "\e05d";
-}
-.tbos-p-dato.casa > i:before {
-    content: "\f6e8";
-}
-.tbos-p-dato.cromos > i:before {
-  content: "\f52e";
+    color: var(--accent);
   }
-.tbos-p-dato.magia > i:before {
-  content: "\f72a";
-}
-.tbos-p-dato.condición > i:before {
-  content: "\f54c";
-}
-div#tbos-p-cert .tbos-p-dato {
+
+  .tbos-p-dato.mensajes:after {
+    content: "mensajes";
+  }
+
+  .tbos-p-dato.galeones:after {
+    content: "galeones";
+  }
+
+  .tbos-p-dato.edad:after {
+    content: "años";
+  }
+
+  .tbos-p-dato.galeones>b,
+  .tbos-p-dato.mensajes>b,
+  .tbos-p-dato.edad>b {
+    display: none;
+  }
+
+  .tbos-p-dato.mensajes>i:before {
+    content: "\f52d";
+  }
+
+  .tbos-p-dato.edad>i:before {
+    content: "\f183";
+  }
+
+  .tbos-p-dato.raza>i:before {
+    content: "\e05d";
+  }
+
+  .tbos-p-dato.casa>i:before {
+    content: "\f6e8";
+  }
+
+  .tbos-p-dato.cromos>i:before {
+    content: "\f52e";
+  }
+
+  .tbos-p-dato.magia>i:before {
+    content: "\f72a";
+  }
+
+  .tbos-p-dato.condición>i:before {
+    content: "\f54c";
+  }
+
+  div#tbos-p-cert .tbos-p-dato {
     display: block;
     padding: 20px;
     background: transparent;
     color: var(--color) !important;
-}
-.tbos-p-dato.certificaciones > b::before {
+  }
+
+  .tbos-p-dato.certificaciones>b::before {
     content: 'Certificaciones';
     font-size: var(--fntsize-cat);
-}
-.tbos-p-dato.idiomas > b::before {
+  }
+
+  .tbos-p-dato.idiomas>b::before {
     content: 'Idiomas';
     font-size: var(--fntsize-cat);
-}
-.tbos-p-dato.certificaciones > b, .tbos-p-dato.idiomas > b {
+  }
+
+  .tbos-p-dato.certificaciones>b,
+  .tbos-p-dato.idiomas>b {
     color: var(--color-two);
     font-size: 0;
     font-family: var(--fnt-title);
-}
-.tbos-p-dato.idiomas > b {
+  }
+
+  .tbos-p-dato.idiomas>b {
     color: var(--color-two);
     font-size: 0;
     font-family: var(--fnt-title);
-}
-.tbos-p-dato.certificaciones ul.profile_field_list, .tbos-p-dato.idiomas ul.profile_field_list {
+  }
+
+  .tbos-p-dato.certificaciones ul.profile_field_list,
+  .tbos-p-dato.idiomas ul.profile_field_list {
     color: var(--color-two);
-}
-.tbos-p-dato.certificaciones ul.profile_field_list > li, .tbos-p-dato.idiomas ul.profile_field_list > li {
+  }
+
+  .tbos-p-dato.certificaciones ul.profile_field_list>li,
+  .tbos-p-dato.idiomas ul.profile_field_list>li {
     padding: 10px;
     border: 1px solid var(--accent);
     display: inline-flex;
     align-content: flex-start;
     margin: 5px;
     vertical-align: middle;
-}
-.tbos-p-dato.certificaciones ul.profile_field_list > li::before {
-    content: '\f5f3';
-    font-family:'Font Awesome 6 Pro';
-    padding-right: 5px;
-}
-.tbos-p-dato.idiomas ul.profile_field_list > li::before {
-    content: '\f1ab';
-    font-family:'Font Awesome 6 Pro';
-    padding-right: 5px;
-}
+  }
 
+  .tbos-p-dato.certificaciones ul.profile_field_list>li::before {
+    content: '\f5f3';
+    font-family: 'Font Awesome 6 Pro';
+    padding-right: 5px;
+  }
+
+  .tbos-p-dato.idiomas ul.profile_field_list>li::before {
+    content: '\f1ab';
+    font-family: 'Font Awesome 6 Pro';
+    padding-right: 5px;
+  }
+
+  div#tbos-p-cert,
+  div#tbos-p-spells,   
+  div#tbos-p-skills {
+    max-height: 250px;
+    margin-top: -100px;
+    top: 99px;
+    overflow: auto;
+  }
 </style>
-    
-    <div class="tbos-perfil">
-          <div class="tbos-p-nombre">
-            <b>{USERNAME}</b>
-            <span>{POSTER_RANK}</span>
+
+<div class="tbos-perfil">
+  <div class="tbos-p-nombre">
+    <b>{USERNAME}</b>
+    <span>{POSTER_RANK}</span>
+  </div>
+  <div class="tbos-p-contenido">
+    <div class="tbos-p-avatar">
+      {AVATAR_IMG}
+    </div>
+    <div class="tbos-p-informacion">
+      <!-- BEGIN profile_field -->
+      <div class="tbos-p-dato"><i class="fa-light"></i><b>{profile_field.LABEL}</b> <span>{profile_field.CONTENT}</span>
+      </div>
+      <!-- END profile_field -->
+      <div class="tbos-p-dato tbos-p-dato-ultimacon"><i class="fa-light fa-eye"></i><span>{LAST_VISIT_TIME}</span></div>
+    </div>
+    <div class="tbos-p-cajon">
+      <div id="tbos-p-botones">
+        <button onclick="showIndex()" class="tbos-bactivo" id="tbos-bin"><i class="fa-regular fa-house"></i></button>
+        <button onclick="showhye()" id="tbos-bhye"><i class="fa-regular fa-coin-vertical"></i></button>
+        <button onclick="showInv()" id="tbos-binv"><i class="fa-regular fa-medal"></i></button>
+        <button onclick="showRPG()" id="tbos-brpg"><i class="fa-regular fa-dice-d20"></i></button>
+        <button onclick="showCert()" id="tbos-cert"><i class="fa-regular fa-file-certificate"></i></button>
+        <button onclick="showSkills()" id="tbos-skills"><i class="fa-regular fa-hand-sparkles"></i></button>
+        <button onclick="showSpells()" id="tbos-spells"><i class="fa-regular fa-wand"></i></button>
+      </div>
+      <div id="tbos-p-indice" class="tbos-pactive">
+        <div class="tbos-p-index-c">
+          <div class="tbos-p-i-img"></div>
+          <div class="tbos-p-i-quote"></div>
+        </div>
+      </div>
+      <div id="tbos-p-hye">
+        <div class="img"
+          style="transform: rotate(90deg);background:url(https://i.imgur.com/rAd8Rmx.png);width: 400px;height: 323px;background-size: cover;">
+        </div>
+        <div>
+          <div class="tbos-p-i-experiencia">
+            <div><span></span><b>experiencia</b></div>
           </div>
-          <div class="tbos-p-contenido">
-            <div class="tbos-p-avatar">
-              {AVATAR_IMG}
-            </div>
-            <div class="tbos-p-informacion">
-              <!-- BEGIN profile_field -->
-              <div class="tbos-p-dato"><i class="fa-light"></i><b>{profile_field.LABEL}</b> <span>{profile_field.CONTENT}</span></div>
-              <!-- END profile_field -->
-              <div class="tbos-p-dato tbos-p-dato-ultimacon"><i class="fa-light fa-eye"></i><span>{LAST_VISIT_TIME}</span></div>
-            </div>
-            <div class="tbos-p-cajon">
-              <div id="tbos-p-botones">
-                <button onclick="showIndex()" class="tbos-bactivo" id="tbos-bin"><i class="fa-regular fa-house"></i></button>
-                <button onclick="showhye()" id="tbos-bhye"><i class="fa-regular fa-coin-vertical"></i></button>
-                <button onclick="showInv()" id="tbos-binv"><i class="fa-regular fa-medal"></i></button>
-                <button onclick="showRPG()" id="tbos-brpg"><i class="fa-regular fa-dice-d20"></i></button>
-                <button onclick="showCert()" id="tbos-cert"><i class="fa-regular fa-file-certificate"></i></button>
-              </div>
-              <div id="tbos-p-indice" class="tbos-pactive">
-                <div class="tbos-p-index-c">
-                  <div class="tbos-p-i-img"></div>
-                  <div class="tbos-p-i-quote"></div>
-                </div>
-             </div>
-              <div id="tbos-p-hye">
-    <div class="img" style="transform: rotate(90deg);background:url(https://i.imgur.com/rAd8Rmx.png);width: 400px;height: 323px;background-size: cover;"></div>
-                <div><div class="tbos-p-i-experiencia">
-                  <div><span></span><b>experiencia</b></div>
-                </div>
-                <div class="tbos-p-i-habilidades">
-                  <b>Galeones</b>
-                  <span></span>
-                  </div></div>
-              </div>
-              <div id="tbos-p-rpg">
-                <!-- BEGIN switch_rpg -->
-    
-    <!-- BEGIN rpg_fields -->
-    {switch_rpg.rpg_fields.F_VALUE_NEW}
-    <!-- END rpg_fields -->
-    <!-- END switch_rpg -->
-    
-              </div>
-              <div id="tbos-p-inv">
-              <!-- BEGIN switch_awards -->
-            <div class="awards_block_simple_wrapper" style="float: left; width: 100%;">
-                <div class="awards_block_simple">{switch_awards.AWARDS_LIST}</div>
-            </div>
-            <!-- END switch_awards -->
-              </div>
-              <div id="tbos-p-cert">
-                <div class="cert-list"></div>
-                <div class="lang-list"></div>
-              </div>
-            </div>
-          </div>
-          <div class="tbos-p-estadisticas">
-            <div class="tbos-pe-links">
-              <a href="/sta/{PUSERNAME}"><i class="fa-light fa-book"></i><span>temas donde</span> ha participado</a>
-              <a href="/spa/{PUSERNAME}"><i class="fa-light fa-pen"></i><span>mensajes</span> posteados</a>
-              <a href="/st/{PUSERNAME}"><i class="fa-light fa-folder"></i><span>temas</span> creados</a>
-            </div>
-            <div class="tbos-pe-contacto tbos-contacto-imgs">
-              <!-- BEGIN contact_field -->
-              {contact_field.CONTENT}
-              <!-- END contact_field -->
-            </div>
+          <div class="tbos-p-i-galeones">
+            <b>Galeones</b>
+            <span></span>
           </div>
         </div>
-    
-    
-    <script>
-    var index = document.getElementById("tbos-p-indice");
-    var rpg = document.getElementById("tbos-p-rpg");
-    var inv = document.getElementById("tbos-p-inv");
-    var hye = document.getElementById("tbos-p-hye");
-    var cert = document.getElementById("tbos-p-cert");
-    var bind = document.getElementById("tbos-bin");
-    var brpg = document.getElementById("tbos-brpg");
-    var binv = document.getElementById("tbos-binv");
-    var bhye = document.getElementById("tbos-bhye");
-    var bcert = document.getElementById("tbos-cert");
-    
-    function show(element,boton){
-       if(element.className === 'tbos-pactive'){
-         
-       } else {
-         var current_active = document.getElementsByClassName("tbos-pactive");
-         var botton_active = document.getElementsByClassName("tbos-bactivo");
-         current_active[0].classList.remove("tbos-pactive");
-         botton_active[0].classList.remove("tbos-bactivo");
-         
-         element.classList.add("tbos-pactive");
-         boton.classList.add("tbos-bactivo");
-       }
+      </div>
+      <div id="tbos-p-rpg">
+        <!-- BEGIN switch_rpg -->
+
+        <!-- BEGIN rpg_fields -->
+        {switch_rpg.rpg_fields.F_VALUE_NEW}
+        <!-- END rpg_fields -->
+        <!-- END switch_rpg -->
+
+      </div>
+      <div id="tbos-p-inv">
+        <!-- BEGIN switch_awards -->
+        <div class="awards_block_simple_wrapper" style="float: left; width: 100%;">
+          <div class="awards_block_simple">{switch_awards.AWARDS_LIST}</div>
+        </div>
+        <!-- END switch_awards -->
+      </div>
+      <div id="tbos-p-cert">
+        <div class="cert-list"></div>
+        <div class="lang-list"></div>
+      </div>
+      <div id="tbos-p-skills">
+        <div class="pj-skills">
+          
+        </div>
+      </div>
+      <div id="tbos-p-spells">
+        <a href="https://tboshadows.foroactivo.com/t4597-08-1-listado-de-hechizos" class="h-spells"
+          target="_blank">Consulta el Listado de Hechizos</a>
+        <div class="pj-spells"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="tbos-p-estadisticas">
+    <div class="tbos-pe-links">
+      <a href="/sta/{PUSERNAME}"><i class="fa-light fa-book"></i><span>temas donde</span> ha participado</a>
+      <a href="/spa/{PUSERNAME}"><i class="fa-light fa-pen"></i><span>mensajes</span> posteados</a>
+      <a href="/st/{PUSERNAME}"><i class="fa-light fa-folder"></i><span>temas</span> creados</a>
+    </div>
+    <div class="tbos-pe-contacto tbos-contacto-imgs">
+      <!-- BEGIN contact_field -->
+      {contact_field.CONTENT}
+      <!-- END contact_field -->
+    </div>
+  </div>
+</div>
+
+<script>
+  var index = document.getElementById("tbos-p-indice");
+  var rpg = document.getElementById("tbos-p-rpg");
+  var inv = document.getElementById("tbos-p-inv");
+  var hye = document.getElementById("tbos-p-hye");
+  var cert = document.getElementById("tbos-p-cert");
+  var skills = document.getElementById("tbos-p-skills");
+  var spells = document.getElementById("tbos-p-spells");
+  var bind = document.getElementById("tbos-bin");
+  var brpg = document.getElementById("tbos-brpg");
+  var binv = document.getElementById("tbos-binv");
+  var bhye = document.getElementById("tbos-bhye");
+  var bcert = document.getElementById("tbos-cert");
+  var bskills = document.getElementById("tbos-skills");
+  var bspells = document.getElementById("tbos-spells");
+  
+  function show(element, boton) {
+    if (element.className === 'tbos-pactive') {
+
+    } else {
+      var current_active = document.getElementsByClassName("tbos-pactive");
+      var botton_active = document.getElementsByClassName("tbos-bactivo");
+      current_active[0].classList.remove("tbos-pactive");
+      botton_active[0].classList.remove("tbos-bactivo");
+      element.classList.add("tbos-pactive");
+      boton.classList.add("tbos-bactivo");
     }
-    function showCert(){
-       show(cert, bcert);
-    }
-    function showRPG(){
-       show(rpg, brpg);
-    }
-    function showInv(){
-       show(inv, binv);
-    }
-    function showhye(){
-       show(hye, bhye);
-    }
-    function showIndex(){
-       show(index, bind);
-    }
-      $('#i_icon_email').parent().remove();
-    </script>
-    <script>
-      $(document).ready(function () {
-      $(".tbos-p-dato > b").each(function () {
-        $(this)
-          .parents(".tbos-p-dato")
-          .addClass(
-            $(this)
-              .text()
-              .split(" ")[0]
-              .toLowerCase()
-              .replace(/'/g, "")
-              .replace(/\(|\)/g, "")
-          );
-      }); 
-      $('.tbos-p-dato.inventario').each(function(){
-        $(this).parent().siblings('.tbos-p-cajon').children('#tbos-p-inv').append(this);
+  }
+  function showCert() {
+    show(cert, bcert);
+  }
+     function showSkills() {
+    show(skills, bskills);
+  }
+  function showSpells() {
+    show(spells, bspells);
+  }
+  function showRPG() {
+    show(rpg, brpg);
+  }
+  function showInv() {
+    show(inv, binv);
+  }
+  function showhye() {
+    show(hye, bhye);
+  }
+  function showIndex() {
+    show(index, bind);
+  }
+  $('#i_icon_email').parent().remove();
+</script>
+<script>
+  $(document).ready(function () {
+    $(".tbos-p-dato > b").each(function () {
+      $(this)
+        .parents(".tbos-p-dato")
+        .addClass(
+          $(this)
+            .text()
+            .split(" ")[0]
+            .toLowerCase()
+            .replace(/'/g, "")
+            .replace(/\(|\)/g, "")
+        );
     });
-      $('.tbos-p-dato.imagen img').each(function(){
-        $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').children('#tbos-p-indice').children('.tbos-p-index-c').children('.tbos-p-i-img').prepend(this);
+    $('.tbos-p-dato.inventario').each(function () {
+      $(this).parent().siblings('.tbos-p-cajon').children('#tbos-p-inv').append(this);
     });
-      $('.tbos-p-dato.frase .field_uneditable').each(function(){
-        $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').children('#tbos-p-indice').children('.tbos-p-index-c').children('.tbos-p-i-quote').prepend(this);
+    $('.tbos-p-dato.imagen img').each(function () {
+      $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').children('#tbos-p-indice').children('.tbos-p-index-c').children('.tbos-p-i-img').prepend(this);
     });
-      $('.tbos-p-dato.galeones .field_uneditable').each(function(){
-        $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').children('#tbos-p-hye').find('.tbos-p-i-habilidades > b').prepend(this);
+    $('.tbos-p-dato.frase .field_uneditable').each(function () {
+      $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').children('#tbos-p-indice').children('.tbos-p-index-c').children('.tbos-p-i-quote').prepend(this);
     });
-      $('.tbos-p-dato.imagen_grande img').each(function(){
-        $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').attr('style','background:url('+$(this)[0].src+');');
+    $('.tbos-p-dato.galeones .field_uneditable').each(function () {
+      $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').children('#tbos-p-hye').find('.tbos-p-i-galeones > b').prepend(this);
     });
-    $('.tbos-p-dato.certificaciones').each(function() {
-    $('.cert-list').prepend($(this)); 
-});
-$('.tbos-p-dato.idiomas').each(function() {
-    $('.lang-list').prepend($(this)); 
-});
-      $('.tbos-p-dato.experiencia .field_uneditable').each(function(){
-        $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').children('#tbos-p-hye').find('.tbos-p-i-experiencia > div > span').prepend(this);
+    $('.tbos-p-dato.imagen_grande img').each(function () {
+      $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').attr('style', 'background:url(' + $(this)[0].src + ');');
     });
-      $('#tbos-p-inv .inventario').append($('#rpg-tickets'));
-     $(".tbos-p-nombre > b span strong").each(function(){
-        var color = $(this).css('color');
-        $(this).parents(".tbos-perfil").attr('style', '--accent: '+ color +';');
+    $('.tbos-p-dato.certificaciones').each(function () {
+      $('.cert-list').prepend($(this));
     });
-      $('.tbos-p-nombre > b').each(function(){
-        var bodyTitle = $(this).text();
-        $(this).parents('html').children('head').children('title').html(bodyTitle);
-      });
-      });
-    </script>
-    <script src="{JQUERY_ROOT}json/jquery.json-1.3.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    //<![CDATA[
-        $(document).ready(function(){
-            $('[id^=field_id]').each(function(){
-                if ( $(this).find('.field_editable').is('span, div') )
-                {
-                    $(this).hover(function()
-                    {
-                        if( $(this).find('.field_editable.invisible').is('span, div') )
-                        {
-                            $(this).find('.field_editable').prev().addClass('ajax-profil_hover').parent().addClass('ajax-profil_parent').append('<div class="ajax-profil_edit"><img src="{AJAX_EDIT_IMG}" /></div>');
-                            $(this).find('.ajax-profil_edit').attr({
-                                    alt: "{L_FIELD_EDIT_VALUE}",
-                                    title: "{L_FIELD_EDIT_VALUE}"
-                                }).click(function(){
-                                $(this).prev().prev().removeClass('ajax-profil_hover').addClass('invisible').next().removeClass('invisible').append('<img src="{AJAX_VALID_IMG}" class="ajax-profil_valid" />').find('input,select');
-                                $(this).prev().find('.ajax-profil_valid').attr({
-                                    alt: "{L_VALIDATE}",
-                                    title: "{L_VALIDATE}"
-                                }).click(function(){
-                                    var content = new Array();
-                                    $(this).parent().find('[name]').each(function(){
-                                        var type_special = $(this).is('input[type=radio],input[type=checkbox]');
-                                        if ( (type_special && $(this).is(':checked')) || !type_special )
-                                        {
-                                            content.push(new Array($(this).attr('name'), $(this).attr('value')));
-                                        }
-                                    });
-                                    var id_name = $(this).parents('[id^=field_id]').attr('id');
-                                    var id = id_name.substring(8, id_name.length);
-                                    $.post(
-                                        "{U_AJAX_PROFILE}",
-                                        {id:id,user:"{CUR_USER_ID}",active:"{CUR_USER_ACTIVE}",content:$.toJSON(content),tid:"{TID}"},
-                                        function(data){
-                                            $.each(data, function (i, item) {
-                                                if (item.startsWith('error : ')){
-                                                    let present_err=document.getElementById('field_id' + i + "_err");
-                                                    if(!present_err){
-                                                        let err = document.createElement('div');
-                                                        err.id = 'field_id' + i + "_err";
-                                                        err.classList.add("form-error");
-                                                        err.textContent = item.substring(8);
-                                                        document.getElementById('field_id' + i).querySelector('.field_editable input').after(err);
-                                                    }else{
-                                                        present_err.innerText=item.substring(8);
-                                                    }
-                                                }else {
-                                                    let err=document.getElementById('field_id' + i + "_err");
-                                                    if(err){
-                                                        err.remove();
-                                                    }
-                                                    $('[id=field_id' + i + ']').find('.field_uneditable').html(item).end().find('.ajax-profil_valid').remove().end().find('.field_editable').addClass('invisible').end().find('.field_uneditable').removeClass('invisible');
-                                                }
-                                            });
-                                        },
-                                        "json"
-                                    );
-                                });
-                                $(this).remove();
-                            });
+    $('.tbos-p-dato.idiomas').each(function () {
+      $('.lang-list').prepend($(this));
+    });
+    $('.tbos-p-dato.hechizos').each(function () {
+      $('.pj-spells').prepend($(this));
+    });
+     $('.tbos-p-dato.habilidades').each(function () {
+      $('.pj-skills').prepend($(this));
+    });
+    $('.tbos-p-dato.experiencia .field_uneditable').each(function () {
+      $(this).parents('.tbos-p-informacion').siblings('.tbos-p-cajon').children('#tbos-p-hye').find('.tbos-p-i-experiencia > div > span').prepend(this);
+    });
+    $('#tbos-p-inv .inventario').append($('#rpg-tickets'));
+    $(".tbos-p-nombre > b span strong").each(function () {
+      var color = $(this).css('color');
+      $(this).parents(".tbos-perfil").attr('style', '--accent: ' + color + ';');
+    });
+    $('.tbos-p-nombre > b').each(function () {
+      var bodyTitle = $(this).text();
+      $(this).parents('html').children('head').children('title').html(bodyTitle);
+    });
+  });
+</script>
+<script src="{JQUERY_ROOT}json/jquery.json-1.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  //<![CDATA[
+  $(document).ready(function () {
+    $('[id^=field_id]').each(function () {
+      if ($(this).find('.field_editable').is('span, div')) {
+        $(this).hover(function () {
+          if ($(this).find('.field_editable.invisible').is('span, div')) {
+            $(this).find('.field_editable').prev().addClass('ajax-profil_hover').parent().addClass('ajax-profil_parent').append('<div class="ajax-profil_edit"><img src="{AJAX_EDIT_IMG}" /></div>');
+            $(this).find('.ajax-profil_edit').attr({
+              alt: "{L_FIELD_EDIT_VALUE}",
+              title: "{L_FIELD_EDIT_VALUE}"
+            }).click(function () {
+              $(this).prev().prev().removeClass('ajax-profil_hover').addClass('invisible').next().removeClass('invisible').append('<img src="{AJAX_VALID_IMG}" class="ajax-profil_valid" />').find('input,select');
+              $(this).prev().find('.ajax-profil_valid').attr({
+                alt: "{L_VALIDATE}",
+                title: "{L_VALIDATE}"
+              }).click(function () {
+                var content = new Array();
+                $(this).parent().find('[name]').each(function () {
+                  var type_special = $(this).is('input[type=radio],input[type=checkbox]');
+                  if ((type_special && $(this).is(':checked')) || !type_special) {
+                    content.push(new Array($(this).attr('name'), $(this).attr('value')));
+                  }
+                });
+                var id_name = $(this).parents('[id^=field_id]').attr('id');
+                var id = id_name.substring(8, id_name.length);
+                $.post(
+                  "{U_AJAX_PROFILE}",
+                  { id: id, user: "{CUR_USER_ID}", active: "{CUR_USER_ACTIVE}", content: $.toJSON(content), tid: "{TID}" },
+                  function (data) {
+                    $.each(data, function (i, item) {
+                      if (item.startsWith('error : ')) {
+                        let present_err = document.getElementById('field_id' + i + "_err");
+                        if (!present_err) {
+                          let err = document.createElement('div');
+                          err.id = 'field_id' + i + "_err";
+                          err.classList.add("form-error");
+                          err.textContent = item.substring(8);
+                          document.getElementById('field_id' + i).querySelector('.field_editable input').after(err);
+                        } else {
+                          present_err.innerText = item.substring(8);
                         }
-                    },function()
-                    {
-                        if( $(this).find('.field_editable.invisible').is('span, div') )
-                        {
-                            $(this).find('.field_editable').prev().removeClass('ajax-profil_hover');
-                            $(this).find('.ajax-profil_edit').remove();
+                      } else {
+                        let err = document.getElementById('field_id' + i + "_err");
+                        if (err) {
+                          err.remove();
                         }
+                        $('[id=field_id' + i + ']').find('.field_uneditable').html(item).end().find('.ajax-profil_valid').remove().end().find('.field_editable').addClass('invisible').end().find('.field_uneditable').removeClass('invisible');
+                      }
                     });
-                }
+                  },
+                  "json"
+                );
+              });
+              $(this).remove();
             });
+          }
+        }, function () {
+          if ($(this).find('.field_editable.invisible').is('span, div')) {
+            $(this).find('.field_editable').prev().removeClass('ajax-profil_hover');
+            $(this).find('.ajax-profil_edit').remove();
+          }
         });
-    //]]>
-    </script>
+      }
+    });
+  });
+  //]]>
+</script>
