@@ -234,12 +234,27 @@ a.h-spells {
 }
 
 .pj-spells .hechizos strong {
-    color: var(--color);
+    color: #cecece;
     display: block;
     padding: 2px 5px;
     font-size: 12px;
     margin-bottom: 5px;
-    background: var(--prin-bckg);
+    position: relative;
+    z-index: 21;
+}
+.pj-spells .hechizos strong::after {
+    content: '';
+    background: var(--accent);
+    display: block;
+    width: 104%;
+    height: 22px;
+    opacity: .4;
+    position: relative;
+    top: -20px;
+    padding: 0;
+    margin: 0;
+    left: -5px;
+    z-index: 8;
 }
 
 .tbos-p-dato.hechizos,
