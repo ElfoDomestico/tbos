@@ -211,8 +211,9 @@ div#tbos-p-spells, div#tbos-p-skills{
 }
 
 .pj-spells, .pj-skills {
-    padding: 5px;
-    color: var(--color-two);
+color: var(--color-two);
+    max-height: 210px;
+    overflow: overlay;
 }
 
 a.h-spells {
@@ -220,17 +221,18 @@ a.h-spells {
 }
 
 .pj-spells h2.post-content, .pj-skills h2.post-content {
-    color: var(--color-two);
-    background: var(--accent);
+color: var(--color-two);
+    border-bottom: 3px solid var(--accent);
     text-align: center;
+    font-family: var(--fnt-title);
 }
 
 .pj-spells .hechizos strong {
-    color: var(--color-two);
+color: var(--color-two);
     display: block;
-    padding: 5px;
-    font-size: larger;
-    border-bottom: 2px solid var(--accent);
+    padding: 2px 5px;
+    font-size: 12px;
+    background: var(--accent);
     margin-bottom: 5px;
 }
 
