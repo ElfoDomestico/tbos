@@ -250,7 +250,7 @@ a.h-spells {
     display: inline-block;
 }
 
-.pj-spells .hechizos i::before {
+.pj-spells .hechizos .field_uneditable i::before {
     content: '\e5d6';
     font-family: 'FontAwesome';
     margin-right: 5px;
