@@ -206,11 +206,11 @@
     font-weight: 900;
 }
 
-div#tbos-p-spells {
+div#tbos-p-spells, div#tbos-p-skills{
     padding: 10px;
 }
 
-.pj-spells {
+.pj-spells´, .pj-skills {
     padding: 5px;
 }
 
@@ -218,7 +218,7 @@ a.h-spells {
     color: var(--color-two);
 }
 
-.pj-spells h2.post-content {
+.pj-spells h2.post-content, .pj-skills h2.post-content {
     color: var(--color-two);
     background: var(--accent);
     text-align: center;
@@ -233,7 +233,7 @@ a.h-spells {
     margin-bottom: 5px;
 }
 
-.tbos-p-dato.hechizos {
+.tbos-p-dato.hechizos, .tbos-p-dato.habilidades {
     background: transparent;
     columns: 3;
     display: block;
