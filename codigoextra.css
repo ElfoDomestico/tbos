@@ -234,28 +234,28 @@ a.h-spells {
 }
 
 .pj-spells .hechizos strong {
-    color: #cecece;
+    color: var(--color-two);
     display: block;
     padding: 2px 5px;
     font-size: 12px;
     margin-bottom: 5px;
-    position: relative;
+    position: relative; /* Necesario para posicionar el ::after */
     z-index: 21;
+    overflow: hidden; /* Por si el fondo se desborda */
 }
+
 .pj-spells .hechizos strong::after {
     content: '';
     background: var(--accent);
-    display: block;
-    width: 104%;
-    height: 22px;
-    opacity: .4;
-    position: relative;
-    top: -20px;
-    padding: 0;
-    margin: 0;
-    left: -5px;
-    z-index: 8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: 1; /* Debajo del texto */
 }
+
 
 .tbos-p-dato.hechizos,
 .tbos-p-dato.habilidades {
