@@ -297,7 +297,7 @@ span#rpg-habilidades {
   border-radius: 50px;
   background-color: #ccc; /* Fondo gris */
   appearance: none;
-  border: 2px solid var(--accent);
+  border: 1px solid var(--accent);
 }
 
 /* Webkit (Chrome, Safari, Edge) */
@@ -308,11 +308,11 @@ span#rpg-habilidades {
 
 .pj-skills progress::-webkit-progress-value {
   background-color: var(--accent); /* Color de la barra */
-  border-radius: 10px;
+  border-radius: 0;
 }
 
 /* Firefox */
 .pj-skills progress::-moz-progress-bar {
   background-color: var(--accent); /* Color de la barra */
-  border-radius: 10px;
+  border-radius: 0;
 }
