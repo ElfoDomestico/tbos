@@ -297,21 +297,22 @@ span#rpg-habilidades {
   border-radius: 50px;
   background-color: #ccc; /* Fondo gris */
   appearance: none;
+  border: 2px solid var(--accent);
 }
 
 /* Webkit (Chrome, Safari, Edge) */
 .pj-skills progress::-webkit-progress-bar {
   background-color: #ccc; /* Fondo gris */
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .pj-skills progress::-webkit-progress-value {
   background-color: var(--accent); /* Color de la barra */
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 /* Firefox */
 .pj-skills progress::-moz-progress-bar {
   background-color: var(--accent); /* Color de la barra */
-  border-radius: 50px;
+  border-radius: 10px;
 }
