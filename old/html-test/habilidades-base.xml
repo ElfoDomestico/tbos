@@ -1,0 +1,26 @@
+<h2>Habilidades Generales</h2>
+<div class="hab-gen">
+  <label for="alerta">Alerta</label>
+  <progress id="alerta" value="0" max="5"></progress>
+
+  <label for="carisma">Carisma</label>
+  <progress id="carisma" value="0" max="5"></progress>
+
+  <label for="combate">Combate</label>
+  <progress id="combate" value="0" max="5"></progress>
+
+  <label for="intimidacion">Intimidación</label>
+  <progress id="intimidacion" value="0" max="5"></progress>
+
+  <label for="investigacion">Investigación</label>
+  <progress id="investigacion" value="0" max="5"></progress>
+
+  <label for="sigilo">Sigilo</label>
+  <progress id="sigilo" value="0" max="5"></progress>
+</div>
+
+<h2>Habilidades Mágicas</h2> 
+<div class="hab-mag"> 
+  <label for="artefactos">Artefactos</label> 
+  <progress id="artefactos" value="2" max="5"></progress> 
+</div>
