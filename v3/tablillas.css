@@ -768,6 +768,7 @@ formulario {
     width: 80%;
     margin: 0 auto;
     border-bottom: 1px solid var(--groups);
+    padding-bottom: 20px;
 }
 
 .t-admin .titulo {
