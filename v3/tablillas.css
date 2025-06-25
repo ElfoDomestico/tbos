@@ -406,9 +406,11 @@ formulario {
 }
 
 .tbosc-tema {
-    padding: 3px 4px 3px 40px;
+    padding: 5px;
     font-family: 'Montserrat', Verdana;
     font-size: 14px;
+    background: var(--bg3);
+    margin: 4px 30px;
 }
 
 .tbosc-tema a {
