@@ -216,10 +216,12 @@ formulario {
     color: var(--groups);
 }
 
+/* Baul */
+
 .tbos-baul {
     width: 80%;
     margin: 0 auto;
-    border: 1px solid var(--groups);
+    border: 2px solid var(--groups);
     padding: 5px;
     background: var(--bg2);
 }
@@ -294,8 +296,6 @@ formulario {
     padding: 10px;
 }
 
-i.fa-light.fa-cat-space {}
-
 .tbos-b-title i {
     font-size: 3em;
     color: var(--groups);
@@ -337,6 +337,8 @@ i.fa-light.fa-cat-space {}
     margin-right: 10px;
 }
 
+/* Relaciones */
+
 .tbos-b-pjs.tbos-b-pjs-sd {
     display: flex;
     flex-wrap: wrap;
@@ -374,12 +376,12 @@ i.fa-light.fa-cat-space {}
     letter-spacing: 0px;
 }
 
-span {}
-
 .tbosr-personaje span {
     font-family: var(--font3);
     font-size: 12px;
 }
+
+/* Cronología */
 
 .tbos-c-leyenda {
     display: flex;
@@ -420,8 +422,6 @@ span {}
     margin-right: 10px;
 }
 
-.tbost-trama::before {}
-
 .tbost-trama:before {
     content: "\f57e";
     font-family: 'Font Awesome 5 Pro';
@@ -448,6 +448,8 @@ span {}
     justify-content: center;
     align-items: stretch;
 }
+
+/* Expedientes */
 
 .tbosr-personaje div {
     display: flex;
@@ -516,6 +518,7 @@ span {}
     font-size: 1.1em;
     border: none;
     background: var(--newflower) no-repeat;
+    border-bottom: 2px solid var(--groups);
 }
 
 .tbosb-quote {
@@ -550,10 +553,6 @@ span {}
 
 .tbos-expediente.tbos-baul .tbose-texto strong {
     color: var(--groups);
-}
-
-.tbos-expediente.tbos-baul .tbose-texto em {
-    color: red;
 }
 
 .tbos-expediente.tbos-baul .tbose-texto i {
@@ -638,4 +637,161 @@ span {}
     border-radius: 100%;
     border: 2px solid var(--groups);
     background-size: contain;
+}
+
+/* Lechucería */
+
+.tbos-baul.tbos-lechuza .tcolor .t-img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.tbos-baul.tbos-lechuza .tbos-b-colors .tcolor.t-img {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 220px;
+    border: 2px solid var(--groups);
+}
+
+.tbos-baul.tbos-lechuza .tbos-b-colors .tcolor.t-img img {
+    border-radius: 100%;
+}
+
+.tbos-baul.tbos-lechuza .tbos1-portada {
+    display: flex;
+}
+
+.tbos-baul.tbos-lechuza .tbosl-portada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.tbos-baul.tbos-lechuza .tbosl-info {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 6%;
+    flex-direction: column;
+}
+
+.tbos-baul.tbos-lechuza .tbosl-info b {
+    font-family: var(--font1);
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: var(--text2);
+    border-bottom: 2px solid var(--groups);
+    width: 100%;
+}
+
+.tbos-baul.tbos-lechuza .tbosl-portada img {
+    width: 190px;
+    height: 190px;
+    background: var(--bg4) / cover;
+    border: 2px solid var(--groups);
+    border-radius: 100%;
+    margin: 20px 0;
+}
+
+.tbos-baul.tbos-lechuza .tbosl-info span {
+    background: var(--bg3);
+}
+
+/* Algunas administrativas */
+
+.tbos-baul.tbos-lechuza .tcolor .t-img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.tbos-baul.tbos-lechuza .tbos-b-colors .tcolor.t-img {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 220px;
+    border: 2px solid var(--groups);
+}
+
+.tbos-baul.tbos-lechuza .tbos-b-colors .tcolor.t-img img {
+    border-radius: 100%;
+}
+
+.tbos-baul.tbos-lechuza .tbos1-portada {
+    display: flex;
+}
+
+.tbos-baul.tbos-lechuza .tbosl-portada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.tbos-baul.tbos-lechuza .tbosl-info {display: flex;align-content: stretch;justify-content: center;align-items: stretch;flex-wrap: wrap;text-align: center;padding: 6%;flex-direction: column;}
+
+.tbos-baul.tbos-lechuza .tbosl-info b {
+    font-family: var(--font1);
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: var(--text2);
+    border-bottom: 2px solid var(--groups);
+    width: 100%;
+}
+
+.tbos-baul.tbos-lechuza .tbosl-portada img {
+    width: 190px;
+    height: 190px;
+    background: var(--bg4) / cover;
+    border: 2px solid var(--groups);
+    border-radius: 100%;
+    margin: 20px 0;
+}
+
+.tbos-baul.tbos-lechuza .tbosl-info span {
+    background: var(--bg3);
+}
+
+.t-admin {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--groups);
+}
+
+.t-admin .titulo {
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 1px solid var(--groups);
+    line-height: 2em;
+}
+
+.t-admin .subtitulo {
+    background: var(--bg3);
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font: var(--font2);
+}
+
+.t-admin span.t-num {
+    background: var(--bg3);
+    border: 1px solid var(--groups);
+    border-radius: 100%;
+    padding: 3px;
+    margin-right: 10px;
 }
