@@ -588,3 +588,54 @@ span {}
 .tbose-texto br {
     display: block;
 }
+
+.tbose-datos .tbosb-quote {
+    column-span: all;
+}
+
+/* Búsquedas */
+.tbs-rol {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--groups);
+    background: var(--newflower) no-repeat left center / contain;
+}
+
+.tbs-rol .t-columna1 {
+    width: 45%;
+    padding: 10px 5px;
+}
+
+.tbs-rol .tbs-titulo {
+    font-family: var(--font1);
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid var(--groups);
+    padding: 2px 2px 10px 2px;
+}
+
+.tbs-rol .t1-dato {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 5px;
+    padding: 5px 10px;
+    background: var(--grad2);
+}
+
+.tbs-rol .t-imagen {
+    width: 100px;
+    height: 100px;
+    background-color: var(--bg3);
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 2px solid var(--groups);
+    background-size: contain;
+}
