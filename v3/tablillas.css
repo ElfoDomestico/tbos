@@ -221,9 +221,9 @@ formulario {
 .tbos-baul {
     width: 80%;
     margin: 0 auto;
-    border: 2px solid var(--groups);
     padding: 5px;
-    background: var(--bg2);
+    background: var(--newflower) no-repeat left top / 100%;
+
 }
 
 .tbos-baul.tbos-indice img {
@@ -603,7 +603,7 @@ formulario {
     align-items: stretch;
     flex-wrap: wrap;
     border-bottom: 2px solid var(--groups);
-    background: var(--newflower) no-repeat left center / contain;
+    background: var(--newflower) no-repeat left top / contain;
 }
 
 .tbs-rol .t-columna1 {
