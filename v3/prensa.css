@@ -40,6 +40,16 @@ img.tb-news-photo.tb-news-photo-span {
     padding: 10px;
 }
 
+.tb-news-h3 {
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px 0;
+    padding: 7px 0;
+    border-top: 3px double;
+    border-bottom: 3px double;
+}
+
 .tb-news-section.tb-news-rule {
     columns: 2;
 }
