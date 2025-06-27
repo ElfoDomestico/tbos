@@ -870,6 +870,12 @@ img.tbospd-imagen-b {
     display: block;
 }
 
+.tbosp-resumen {
+    border-left: 3px solid var(--groups);
+    padding: 10px 20px;
+    background: var(--bg2);
+}
+
 /* Tablilla de Combate */
 
 .combate-tabla {
