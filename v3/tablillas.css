@@ -184,16 +184,17 @@ formulario {
     width: 80%;
     display: block;
     margin: 0 auto;
-    background: var(--bg2);
-    outline: 1px solid var(--groups);
+    background: var(--newflower) var(--bg3) no-repeat left top / contain;
 }
 
 .tbos-ptitle {
-    padding: 20px;
+padding: 20px;
     font-family: 'Playfair Display';
     font-size: 20px;
     letter-spacing: 1px;
-    border-bottom: 2px solid var(--groups);
+    color: var(--text2);
+    font-style: italic;
+    margin: 0 20px;
 }
 
 .tbos-ptitle i {
@@ -202,14 +203,17 @@ formulario {
 }
 
 .tbos-ptext {
-    padding: 20px 10px;
+    background: var(--bg4);
+    padding: 30px;
+    margin: 0 20px;
     font-size: 14px;
+    line-height: 1.6em;
 }
 
 .tbos-pinfo {
-    background: var(--bg4);
-    padding: 10px;
-    border-top: 2px solid var(--groups);
+padding: 10px 30px;
+    text-align: right;
+    margin: 0 20px;
 }
 
 .tbos-pinfo i {
@@ -829,20 +833,21 @@ formulario {
 }
 
 .tbospd-title {
-    padding: 15px 20px;
+padding: 15px 20px;
     font-family: var(--font1);
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: normal;
+    margin: 5px 20px;
+    font-style: italic;
 }
 
 .tbospd-title span {
     display: block;
-    font-family: var(--font3);
-    font-size: 12px;
-    margin-top: 3px;
-    background: var(--bg3);
-    padding: 5px;
+    padding: 5px 0;
+    font: var(--font4);
+    margin: 2px 0;
+    letter-spacing: 0;
 }
 
 .tbospd-title i {
@@ -851,7 +856,7 @@ formulario {
 }
 
 .tbos-ptext.tbospd-text {
-    padding: 5px 20px 20px;
+    margin-bottom: 20px;
 }
 
 img.tbospd-imagen {
