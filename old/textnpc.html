@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Prueba changeprofile</title>
+<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<style>
+  .k-middle-container { border: 1px solid #ccc; padding: 10px; margin: 10px; }
+  .kal-avatar-post img { width: 100px; height: 100px; }
+  .kinfo2.kampo1 img { width: 50px; height: 50px; border: 2px solid transparent; }
+</style>
+</head>
+<body>
+
+<div class="k-middle-container">
+
+  <div class="kal-avatar-post">
+    <a href="#"><img src="https://via.placeholder.com/100" alt="avatar"></a>
+  </div>
+
+  <div class="post-tps-username">
+    <a href="/u542">
+      <div class="usr-name">NombreAnt</div>
+      <div class="usr-lstname">ApellidoAnt</div>
+    </a>
+  </div>
+
+  <div class="tbos-stcct-co">
+    <strong>Texto1</strong>
+    <b><a><span>TextoNombre</span></a></b>
+  </div>
+
+  <div class="tbos-stcct-bot">
+    <a href="#">Link1</a>
+    <span></span>
+  </div>
+
+  <div class="kinfo2 campo1">
+    <span class="label">campo1 Imagen : </span>
+    <kcont>
+      <img src="https://via.placeholder.com/50" alt="icono" />
+    </kcont>
+  </div>
+
+  <div class="kinfo2 campo3">
+    <ul><li>Slytherin</li></ul>
+  </div>
+
+  <div class="kinfo2 campo4">
+    <kcont>Mago</kcont>
+  </div>
+
+  <div class="kinfo2 campo47">
+    <kcont>Videncia</kcont>
+  </div>
+
+  <div class="changeprofile"
+       avatar="https://i.ibb.co/drRVjcP/gabriel-iris.jpg"
+       icono="https://i.ibb.co/wY8m8ZV/gabriel-ficha.jpg"
+       nombre="Gabriel Bowie"
+       color_grupo="green"
+       rango="Bruja Guardiana"
+       raza="Semigigante"
+       condicion="Licántropo"></div>
+
+</div>
+
+<script>
+$(document).ready(function(){
+  $('.changeprofile').each(function(){
+    var $this = $(this);
+    var container = $this.parents('.k-middle-container');
+
+    var avatar = $this.attr('avatar');
+    var nombre = $this.attr('nombre') || '';
+    var rango = $this.attr('rango');
+    var color_grupo = $this.attr('color_grupo');
+    var icono = $this.attr('icono');
+    var raza = $this.attr('raza');
+    var condicion = $this.attr('condicion');
+
+    // Cambiar avatar principal
+    container.find('.kal-avatar-post a img').attr('src', avatar);
+
+    // Dividir nombre en nombre y apellido
+    var partesNombre = nombre.trim().split(' ');
+    var nombre_personaje = partesNombre.shift() || '';
+    var apellido_personaje = partesNombre.join(' ');
+
+    // Cambiar nombre y apellido
+    container.find('.usr-name').text(nombre_personaje);
+    container.find('.usr-lstname').text(apellido_personaje);
+
+    // Cambiar color grupo en varios elementos
+    container.find('.tbos-stcct-co strong, .tbos-stcct-bot a, .tbos-stcct-con a, .tbos-stcct-co > b > a > span, .tbos-stcct-bot > span:before')
+      .css('color', color_grupo);
+
+    // Cambiar icono con setTimeout para evitar problemas de carga
+    setTimeout(function(){
+      container.find('.kinfo2.campo1 kcont img').attr('src', icono);
+      container.find('.kinfo2.campo1 kcont img').css('border-color', color_grupo);
+    }, 0);
+
+    // Cambiar rango
+    container.find('.kinfo2.campo3 ul li').text(rango);
+
+    // Cambiar raza si está definido
+    if(raza && raza.trim() !== ''){
+      container.find('.kinfo2.campo4 kcont').text(raza);
+    }
+
+    // Cambiar condicion si está definido
+    if(condicion && condicion.trim() !== ''){
+      container.find('.kinfo2.campo47 kcont').text(condicion);
+    }
+  });
+});
+</script>
+
+</body>
+</html>
