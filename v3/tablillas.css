@@ -958,3 +958,14 @@ p.combatehechizo-desc {
     max-height: 200px;
     overflow: auto;
 }
+
+/* Nuevas Baul */
+
+.tbos-truck {
+    padding: 5px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--newflower) no-repeat left top / contain;
+}
