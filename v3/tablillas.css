@@ -1,3 +1,11 @@
+col2 {
+    columns: 2;
+    display: block;
+    text-align: left;
+    width: 120%;
+    margin: 0 auto;
+}
+
 precio-total-galeones:before,
 precio-total-experiencia:before {
     content: 'Galeones totales';
