@@ -214,7 +214,7 @@ padding: 20px;
     background: var(--bg4);
     padding: 30px;
     margin: 0 20px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.6em;
 }
 
@@ -420,7 +420,7 @@ padding: 10px 30px;
 .tbosc-tema {
     padding: 5px;
     font-family: 'Montserrat', Verdana;
-    font-size: 14px;
+    font-size: 16px;
     background: var(--bg3);
     margin: 4px 30px;
 }
