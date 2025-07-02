@@ -228,6 +228,9 @@ padding: 10px 30px;
     color: var(--groups);
 }
 
+.tbos-post .tbos-ptext strong {
+    color: var(--groups);
+}
 /* Baul */
 
 .tbos-baul {
