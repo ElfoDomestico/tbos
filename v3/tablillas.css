@@ -981,6 +981,23 @@ p.combatehechizo-desc {
     background: var(--newflower) no-repeat left top / contain;
 }
 
+/* Cámara */
+
+.tbos-baul.tbos-cronologia .tbos-c-temas b-stats n {
+    background: transparent;
+    margin: 10px;
+    width: 100px;
+}
+
+.tbos-baul.tbos-cronologia .tbos-c-temas b-stats {
+    display: flex;
+    align-content: stretch;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+}
+
 /* Extra Profile */
 
 .k-physc-desc strong, .k-physc-desc i {
