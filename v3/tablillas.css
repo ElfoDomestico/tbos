@@ -998,6 +998,14 @@ p.combatehechizo-desc {
     align-items: stretch;
 }
 
+h-nivel {
+    display: block;
+}
+
+hechizos div strong {
+    display: block;
+    margin-top: 10px;
+}
 /* Extra Profile */
 
 .k-physc-desc strong, .k-physc-desc i {
