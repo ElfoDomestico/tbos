@@ -1000,6 +1000,9 @@ p.combatehechizo-desc {
 
 h-nivel {
     display: block;
+    background: var(--groups);
+    padding: 4px;
+    font-weight: bold;
 }
 
 hechizos div strong {
