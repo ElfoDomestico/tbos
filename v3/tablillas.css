@@ -214,7 +214,7 @@ padding: 20px;
     background: var(--bg4);
     padding: 30px;
     margin: 0 20px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6em;
 }
 
@@ -252,7 +252,7 @@ padding: 10px 30px;
     background: var(--bg3);
     font-family: 'Playfair Display';
     font-style: italic;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tbos-b-quote i {
@@ -423,7 +423,7 @@ padding: 10px 30px;
 .tbosc-tema {
     padding: 5px;
     font-family: 'Montserrat', Verdana;
-    font-size: 16px;
+    font-size: 18px;
     background: var(--bg3);
     margin: 4px 30px;
 }
@@ -1009,8 +1009,38 @@ hechizos div strong {
     display: block;
     margin-top: 10px;
 }
+
+/* Post Cellphone Friendly*/
+post {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.7em;
+}
+
+post b, post strong, post i, post em {
+    color: var(--groups);
+}
+
+post h2.post-content {
+    font-family: Cambria, serif;
+    letter-spacing: -1px;
+    color: var(--text2);
+    text-align: right;
+}
+
+post h3.post-content {
+    font-family: Cambria, serif;
+    border: none;
+    letter-spacing: -1px;
+    font-style: italic;
+    border-left: 10px solid var(--groups);
+    padding-left: 10px;
+}
+
 /* Extra Profile */
 
 .k-physc-desc strong, .k-physc-desc i {
     color: var(--groups);
 }
+
