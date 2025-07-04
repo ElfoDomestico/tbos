@@ -1038,6 +1038,26 @@ post h3.post-content {
     padding-left: 10px;
 }
 
+post blockquote {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+post h4.post-content {
+    font-family: Cambria, serif;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    border-bottom: 1px solid var(--groups);
+    font-style: italic;
+}
+
+post hr {
+    border-top: 1px solid var(--groups);
+    margin: 20px;
+    padding: 0;
+}
+
 /* Extra Profile */
 
 .k-physc-desc strong, .k-physc-desc i {
