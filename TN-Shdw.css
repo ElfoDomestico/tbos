@@ -50,16 +50,13 @@ div#tienda-items>.seccion {
     font-size: 18px;
     font-weight: 900;
     color: var(--accent);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: left;
     line-height: 18px;
     text-transform: uppercase;
 }
 
 div#carrito {
-background: var(--bg2);
+    background: var(--bg2);
     padding: 50px 30px;
     position: fixed;
     bottom: 0;
@@ -79,7 +76,7 @@ div#items-carrito>div button {
 }
 
 div#items-carrito>div {
-background: var(--bg4);
+    background: var(--bg4);
     border-bottom: var(--border1);
     display: flex;
     align-items: center;
@@ -106,14 +103,19 @@ background: var(--bg4);
 }
 
 .item>i {
-color: #fff;
+    color: #fff;
     text-align: center;
     font-size: 26px;
-    height: 30px;
+    height: 49px;
+    background: var(--accent);
+    margin: -10px -6px 0;
+    width: 19%;
+    border-radius: 100%;
+    padding: 10px;
 }
 
 div#carrito input[type="submit"] {
-background: var(--grad1);
+    background: var(--grad1);
     padding: 10px;
     text-transform: uppercase;
     color: #fff;
@@ -123,20 +125,23 @@ background: var(--grad1);
 }
 
 .item {
-min-height: 300px;
+    min-height: 200px;
     background: var(--bg2);
-    padding: 10px;
     display: flex;
     gap: 10px;
     min-width: 214px;
     flex-grow: 1;
-    max-width: 240px;
-    flex-direction: column;
+    max-width: 290px;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
     justify-content: space-between;
 }
 
 .titulo-carrito {
-margin: -10px -10px 0px;
+    margin: -10px -10px 0px;
     border-bottom: 2px solid var(--accent1);
     height: 30px;
     color: #fff;
@@ -189,16 +194,12 @@ descuento.libre span {
 .item>button {
     background: var(--accent);
     color: #fff;
-    height: 25px;
     text-transform: uppercase;
-    font-size: var(--fntsize-mini);
-    font-weight: 500;
-    font-family: var(--fnt-nrm);
-    letter-spacing: 1px;
-    border-radius: 3px;
+    border-radius: 100px;
     cursor: pointer;
     transition: .3s ease-in;
-    border: 0px;
+    padding: 10px 20px;
+    font: var(--font3);
 }
 
 .item cajon>*:hover {
@@ -241,17 +242,16 @@ div#items-carrito {
 
 .item-precio:before {
     content: "precio";
+    padding-right: 10px;
+    color: var(--accent);
 }
 
 .item-precio {
-    border: var(--border-opacity);
-    padding: 10px 12px;
-    background: var(--background-stema);
-    display: flex;
-    justify-content: space-between;
     text-transform: uppercase;
-    font-size: var(--fntsize-mini);
     letter-spacing: .5px;
+    color: var(--text1);
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 .tbos-miembros-title {
@@ -268,13 +268,13 @@ div#items-carrito {
 }
 
 .descrp-item {
-    padding: 0 10px 10px;
     margin-top: -10px;
-    text-align: justify;
     hyphens: auto;
     line-height: 15px;
-    max-height: 80px;
+    max-height: 85px;
     overflow: auto;
+    padding-right: 10px;
+    font: var(--font4);
 }
 
 .item>img {
@@ -288,13 +288,13 @@ div#items-carrito {
 }
 
 .category-item {
-    margin: -10px -10px 10px -10px;
-    border-bottom: var(--border-opacity);
+    margin: -5px -10px 10px -10px;
     background: var(--accent);
     color: #fff;
-    padding: 4px 10px;
+    padding: 10px;
     text-transform: uppercase;
-    font-size: var(--fntsize-mini);
+    width: 84%;
+    font-size: var(--font4);
 }
 
 precio-total-galeones:before,
