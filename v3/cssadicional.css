@@ -906,7 +906,9 @@ n:before {
   content: '\f004';
   margin-bottom: 14px;
 }
-
+#rpg-estadísticas n:nth-of-type(1):before {
+    content: '\f6de';
+}
 #rpg-estadísticas n:nth-of-type(2):before {
     content: '\f2a7';
 }
