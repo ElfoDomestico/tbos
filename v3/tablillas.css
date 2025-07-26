@@ -998,3 +998,7 @@ formulario item b span {
     color: var(--accent1);
     font-size: 90%;
 }
+
+.body-hab progress:after {
+    content: "Nivel " attr(value);
+}
