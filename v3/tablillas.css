@@ -1001,4 +1001,11 @@ formulario item b span {
 
 .body-hab progress:after {
     content: "Nivel " attr(value);
+    margin-top: -15px;
+    position: absolute;
+    right: 6px;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-size: 80%;
+    letter-spacing: 1px;
 }
