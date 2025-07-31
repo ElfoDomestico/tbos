@@ -1053,3 +1053,44 @@ c-title {
 .camara-personaje b-stats n:before {
     display: none;
 }
+
+.camara-personaje b-info {
+    display: block;
+}
+
+.camara-personaje b-info n, .camara-personaje b-stats n {
+    width: 25%;
+    display: inline-block;
+    margin: 10px;
+    font-family: 'Montserrat';
+    color: var(--groups);
+    padding: 10px;
+    height: auto;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--groups);
+}
+
+.camara-personaje b-info n:before {
+    display: none;
+}
+
+.camara-personaje b-info n num {
+    display: block;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+b-subt {}
+
+.camara-personaje b-subt {
+    display: block;
+    width: 100%;
+    background: var(--bg2);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-weight: bold;
+}
