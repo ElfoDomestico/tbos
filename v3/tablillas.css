@@ -1020,6 +1020,7 @@ c-title {
     width: 100%;
     font: 40px Qestero;
     display: block;
+    text-align: center;
 }
 
 .camara-personaje {
@@ -1060,6 +1061,7 @@ c-title {
 
 .camara-personaje b-info {
     display: block;
+    text-align: center;
 }
 
 .camara-personaje b-info n,
@@ -1074,6 +1076,7 @@ c-title {
     background: none;
     border: none;
     border-bottom: 2px solid var(--groups);
+    text-align: center;
 }
 
 .camara-personaje b-info n:before {
@@ -1108,4 +1111,8 @@ camara h2.post-content, .camara-personaje b-subt {
     margin: 0;
     font-size: 20px;
     font-family: var(--font1);
+}
+
+camara strong {
+    color: var(--groups);
 }
