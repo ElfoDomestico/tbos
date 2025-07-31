@@ -1008,20 +1008,19 @@ formulario item b span {
 /* Cámara Nueva */
 
 camara {
-    display: flex;
     width: 80%;
     margin: 0 auto;
     background: var(--bg4);
     border: var(--border2);
     padding: 30px 20px;
     text-align: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display:block;
 }
 
 c-title {
     width: 100%;
     font: 40px Qestero;
+    display: block;
 }
 
 .camara-personaje {
