@@ -1013,7 +1013,6 @@ camara {
     background: var(--bg4);
     border: var(--border2);
     padding: 30px 20px;
-    text-align: center;
     display:block;
 }
 
@@ -1088,15 +1087,18 @@ c-title {
     padding: 0;
 }
 
-.camara-personaje b-subt {
+camara h2.post-content, .camara-personaje b-subt {
     display: block;
     width: 100%;
     background: var(--bg2);
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     font-family: var(--font1);
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 2px;
 }
 
 .camara-personaje b-stats n num {
