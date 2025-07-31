@@ -998,3 +998,58 @@ formulario item b span {
     color: var(--accent1);
     font-size: 90%;
 }
+
+/* Cámara Nueva */
+
+camara {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    background: var(--bg4);
+    border: var(--border2);
+    padding: 30px 20px;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+c-title {
+    width: 100%;
+    font: 40px Qestero;
+}
+
+.camara-personaje {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+.camara-personaje b-stats {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    gap: 2px;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.camara-personaje b-stats n {
+    width: 135px;
+    height: auto;
+    padding: 10px;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.camara-personaje b-stats n num {
+    font-size: 12px;
+}
+
+.camara-personaje b-stats n:before {
+    display: none;
+}
