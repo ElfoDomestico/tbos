@@ -83,7 +83,7 @@ col2 {
 }
 
 .tbos-ptitle {
-padding: 20px;
+    padding: 20px;
     font-family: 'Playfair Display';
     font-size: 20px;
     letter-spacing: 1px;
@@ -106,7 +106,7 @@ padding: 20px;
 }
 
 .tbos-pinfo {
-padding: 10px 30px;
+    padding: 10px 30px;
     text-align: right;
     margin: 0 20px;
 }
@@ -118,6 +118,7 @@ padding: 10px 30px;
 .tbos-post .tbos-ptext strong {
     color: var(--groups);
 }
+
 /* Baul */
 
 .tbos-baul {
@@ -731,7 +732,7 @@ padding: 10px 30px;
 }
 
 .tbospd-title {
-padding: 15px 20px;
+    padding: 15px 20px;
     font-family: var(--font1);
     font-size: 20px;
     letter-spacing: 1px;
@@ -764,7 +765,7 @@ img.tbospd-imagen {
 }
 
 img.tbospd-imagen-b {
-margin: 20px auto;
+    margin: 20px auto;
     display: block;
     width: 200px;
     height: 200px;
@@ -830,7 +831,8 @@ h1.combate-titulo {
     background: var(--bg4);
 }
 
-.combate-hechizo, .combate-hechizo-2 {
+.combate-hechizo,
+.combate-hechizo-2 {
     padding: 20px;
     background: var(--bg4);
     margin: 0 15px;
@@ -909,7 +911,10 @@ post {
     line-height: 1.7em;
 }
 
-post b, post strong, post i, post em {
+post b,
+post strong,
+post i,
+post em {
     color: var(--groups);
 }
 
@@ -951,7 +956,8 @@ post hr {
 
 /* Extra Profile */
 
-.k-physc-desc strong, .k-physc-desc i {
+.k-physc-desc strong,
+.k-physc-desc i {
     color: var(--groups);
 }
 
@@ -1030,10 +1036,7 @@ c-title {
     display: flex;
     margin: 0;
     width: 100%;
-    gap: 2px;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    gap: 1px;
     justify-content: space-evenly;
 }
 
@@ -1042,8 +1045,11 @@ c-title {
     height: auto;
     padding: 10px;
     font-family: Montserrat;
-    font-size: 10px;
-    font-weight: normal;
+    font-size: 11px;
+    font-weight: bold;
+    border: 1px solid var(--groups) !important;
+    background: var(--bg4) !important;
+    width: 30% !important;
 }
 
 .camara-personaje b-stats n num {
@@ -1058,10 +1064,11 @@ c-title {
     display: block;
 }
 
-.camara-personaje b-info n, .camara-personaje b-stats n {
+.camara-personaje b-info n,
+.camara-personaje b-stats n {
     width: 25%;
     display: inline-block;
-    margin: 10px;
+    margin: 8px;
     font-family: 'Montserrat';
     color: var(--groups);
     padding: 10px;
@@ -1082,8 +1089,6 @@ c-title {
     padding: 0;
 }
 
-b-subt {}
-
 .camara-personaje b-subt {
     display: block;
     width: 100%;
@@ -1093,4 +1098,13 @@ b-subt {}
     font-family: var(--font1);
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.camara-personaje b-stats n num {
+    color: white;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: var(--font1);
 }
