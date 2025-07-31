@@ -1013,7 +1013,9 @@ camara {
     background: var(--bg4);
     border: var(--border2);
     padding: 30px 20px;
-    display:block;
+    display: block;
+    background-image: var(--newflower);
+    background-repeat: no-repeat;
 }
 
 c-title {
@@ -1090,7 +1092,8 @@ c-title {
     padding: 0;
 }
 
-camara h2.post-content, .camara-personaje b-subt {
+camara h2.post-content,
+.camara-personaje b-subt {
     display: block;
     width: 100%;
     background: var(--bg2);
