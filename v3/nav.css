@@ -40,13 +40,12 @@ nav.secondary-menu {
     background: var(--bg4);
     width: 100%;
     z-index: 999999;
-    text-align: right;
 }
 
 nav.secondary-menu .interior {
-    width: 70%;
     margin: auto;
     text-align: left;
+    font-size: 14px;
 }
 
 nav.secondary-menu a,
@@ -91,4 +90,8 @@ nav.secondary-menu .dropdown:hover .dropdown-btn {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+hr.divider {
+    border-top: 1px solid var(--accent1);
 }
