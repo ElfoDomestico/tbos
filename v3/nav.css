@@ -1,0 +1,34 @@
+.kal-navigation {
+    margin-top: -44px;
+    background: var(--bg3);
+    padding-top: 15px;
+    letter-spacing: 0;
+}
+
+.kal-navigation-indx {
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.kal-navigation-usrmenu {
+    font-family: 'Montserrat';
+    font-weight: inherit;
+}
+
+.kal-navigation-usrmenu a {
+    border: none;
+    background: none;
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+
+.kal-navigation-usrmenu a:hover {
+    background: var(--accent4);
+}
+
+.kal-navigation.small {
+    top: 40px;
+    background: var(--bg3);
+}
