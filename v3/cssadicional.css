@@ -1263,7 +1263,6 @@ n {
 }
 
 camara label {
-  color: var(--accent1);
   text-transform: capitalize;
   font-weight: bold;
 }
@@ -1274,6 +1273,7 @@ progress.res {
   position: relative;
   top: -4px;
   border: 1px solid var(--accent4);
+  margin: 5px 0;
 }
 
 progress.res::-webkit-progress-value {
