@@ -1295,3 +1295,8 @@ progress.res:after {
   padding: 3px 5px;
   color: #fff;
 }
+
+camara i.fa-regular, camara .fa-solid, camara .fa-duotono {
+    color: white;
+    font-size: 80%;
+}
