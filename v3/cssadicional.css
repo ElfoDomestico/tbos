@@ -906,39 +906,45 @@ n:before {
   content: '\f004';
   margin-bottom: 14px;
 }
+
 #rpg-estadísticas n:nth-of-type(1):before {
-    content: '\f6de';
+  content: '\f6de';
 }
+
 #rpg-estadísticas n:nth-of-type(2):before {
-    content: '\f2a7';
+  content: '\f2a7';
 }
+
 #rpg-estadísticas n:nth-of-type(3):before {
-    content: '\f5dc';
+  content: '\f5dc';
 }
+
 #rpg-estadísticas n:nth-of-type(4):before {
-    content: '\f183''';
+  content: '\f183' '';
 }
+
 #rpg-estadísticas n:nth-of-type(5):before {
-    content: '\f54b';
+  content: '\f54b';
 }
+
 #rpg-estadísticas n:nth-of-type(6):before {
-    content: '\f185';
+  content: '\f185';
 }
 
 #rpg-especialidad n:nth-of-type(1):before {
-    content: '\e4dc';
+  content: '\e4dc';
 }
 
 #rpg-especialidad n:nth-of-type(3):before {
-    content: '\f132';
+  content: '\f132';
 }
 
 #rpg-especialidad n:nth-of-type(4):before {
-    content: '\f505';
+  content: '\f505';
 }
 
 #rpg-especialidad n:nth-of-type(5):before {
-    content: '\f06e';
+  content: '\f06e';
 }
 
 b-stats {
@@ -1254,4 +1260,38 @@ n {
   background-size: 390px;
   background-position-x: 542px;
   background-position-y: -20px;
+}
+
+camara label {
+  color: var(--accent1);
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+progress.res {
+  height: 20px;
+  width: 200px;
+  position: relative;
+  top: -4px;
+  border: 1px solid var(--accent4);
+}
+
+progress.res::-webkit-progress-value {
+  background: var(--accent4);
+}
+
+progress.res::-webkit-progress-bar {
+  background: var(--bg2);
+}
+
+progress.res:after {
+  content: 'Resistencia ' attr(value);
+  position: absolute;
+  top: -6px;
+  font-family: 'Montserrat';
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 3px 5px;
+  color: #fff;
 }
