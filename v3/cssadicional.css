@@ -1300,3 +1300,7 @@ camara i.fa-regular, camara .fa-solid, camara .fa-duotono {
     color: white;
     font-size: 80%;
 }
+
+.switcheroo[position="top"] {
+    top: 80px;
+}
