@@ -928,10 +928,11 @@ post h2.post-content {
 post h3.post-content {
     font-family: Cambria, serif;
     border: none;
-    letter-spacing: -1px;
-    font-style: italic;
-    border-left: 10px solid var(--groups);
-    padding-left: 10px;
+    border-top: 2px solid var(--groups);
+    padding-top: 10px;
+    font-size: medium;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 post blockquote {
