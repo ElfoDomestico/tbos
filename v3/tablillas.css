@@ -400,7 +400,6 @@ col2 {
     width: 63%;
     align-content: space-between;
     align-items: stretch;
-    columns: 2;
 }
 
 .tbose-portada .tbose-img {
@@ -411,7 +410,6 @@ col2 {
 
 .tbose-datos dato {
     border-bottom: 1px solid var(--groups);
-    font-size: 12px;
     display: inline-block;
     width: 100%;
     padding: 10px;
