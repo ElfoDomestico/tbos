@@ -922,7 +922,8 @@ post h2.post-content {
     font-family: Cambria, serif;
     letter-spacing: -1px;
     color: var(--text2);
-    text-align: right;
+    text-align: center;
+    border-bottom: 2px solid var(--groups);
 }
 
 post h3.post-content {
