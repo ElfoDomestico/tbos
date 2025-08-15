@@ -1304,3 +1304,7 @@ camara i.fa-regular, camara .fa-solid, camara .fa-duotono {
 .switcheroo[position="top"] {
     top: 80px;
 }
+
+a.campoPM {
+    width: auto;
+}
