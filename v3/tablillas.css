@@ -922,6 +922,7 @@ post h2.post-content {
     color: var(--text2);
     text-align: center;
     border-bottom: 2px solid var(--groups);
+    margin-bottom: 10px;
 }
 
 post h3.post-content {
