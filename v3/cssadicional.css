@@ -1306,5 +1306,5 @@ camara i.fa-regular, camara .fa-solid, camara .fa-duotono {
 }
 
 a.campoPM {
-    width: auto;
+    width: auto !important;
 }
