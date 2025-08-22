@@ -1305,6 +1305,13 @@ camara i.fa-regular, camara .fa-solid, camara .fa-duotono {
     top: 80px;
 }
 
+/* Profile Manager */
+
 a.campoPM {
     width: auto !important;
+}
+
+div#field_id11>div>div:after {
+    content: 'años';
+    margin-left: 5px;
 }
