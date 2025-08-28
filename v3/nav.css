@@ -39,7 +39,7 @@ nav.secondary-menu {
     left: 0px;
     background: var(--bg4);
     width: 100%;
-    z-index: 999999;
+    z-index: 9999;
 }
 
 nav.secondary-menu .interior {
