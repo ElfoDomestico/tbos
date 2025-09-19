@@ -654,12 +654,12 @@ em.gmi.gmi-fire-bottle {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-left: 60px;
+  margin-top: 60px;
   background: var(--bg3);
   border: var(--border4);
   padding: 20px;
-  width: 320px;
-  height: 270px;
+  width: 100%;
+  height: 300px;
   position: relative;
   overflow: hidden;
 }
@@ -1318,4 +1318,10 @@ a.campoPM {
 div#field_id11>div>div:after {
     content: 'años';
     margin-left: 5px;
+}
+
+.k-prof-hechizos-cont {
+    columns: 2;
+    column-gap: 40px;
+    column-rule: 1px solid var(--groups);
 }

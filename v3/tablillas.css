@@ -760,6 +760,7 @@ img.tbospd-imagen {
     margin: 20px auto;
     display: block;
     border-radius: 100%;
+    max-width: 200px;
 }
 
 img.tbospd-imagen-b {
