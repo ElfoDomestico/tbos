@@ -1332,3 +1332,39 @@ div#field_id11>div>div:after {
     column-gap: 40px;
     column-rule: 1px solid var(--groups);
 }
+
+/* Toda la Actividad */
+
+.forabg.activity-tbos {
+    margin: 10px auto;
+    width: 80%;
+    font-family: Montserrat;
+    letter-spacing: -1px;
+}
+
+.forabg.activity-tbos .activity-date-group {
+    background-color: var(--bg2);
+    margin-bottom: 20px;
+    background-image: var(--tentacle2);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.forabg.activity-tbos h2.table-title {
+    font-family: var(--font1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--accent2);
+}
+
+.forabg.activity-tbos time {
+    color: var(--accent1);
+}
+
+.forabg.activity-tbos time.time {
+    color: var(--accent3);
+    font-size: 95%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
