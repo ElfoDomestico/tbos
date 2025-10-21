@@ -1369,13 +1369,13 @@ div#field_id11>div>div:after {
     font-weight: 600;
 }
 .module.mod_discover {
-    background: var(--bg2);
-    border: var(--border4);
+    padding: 0 20px;
 }
 
 .module.mod_discover .h3 {
     background: transparent;
     border: none;
+    display: none;
 }
 
 .mod_discover .activity-date-group .header {
@@ -1390,4 +1390,11 @@ div#field_id11>div>div:after {
 .mod_discover .activity-date-group {
     font-family: 'Montserrat';
     font-size: 90%;
+}
+
+tag {
+    background: var(--accent1);
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: var(--text1);
 }
