@@ -1398,3 +1398,16 @@ tag {
     border-radius: 5px;
     color: var(--text1);
 }
+
+span.t-num {
+    font-family: 'Playfair Display';
+    font-size: 90%;
+    color: var(--text1);
+    border: 1px solid var(--accent1);
+    border-radius: 100%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
